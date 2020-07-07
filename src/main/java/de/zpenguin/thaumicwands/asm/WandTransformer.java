@@ -1,0 +1,28 @@
+package de.zpenguin.thaumicwands.asm;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import de.zpenguin.thaumicwands.asm.transformers.TransformerArcaneWorkbench;
+import de.zpenguin.thaumicwands.asm.transformers.TransformerArcaneWorkbenchCharger;
+import net.minecraft.launchwrapper.IClassTransformer;
+import net.minecraft.launchwrapper.Launch;
+
+public class WandTransformer implements IClassTransformer {
+
+	public static final Logger logger = LogManager.getLogger("Thaumic Wands");
+	public static boolean isDeobfEnvironment;
+
+
+	@Override
+	public byte[] transform(String className, String transformedName, byte[] origCode) {
+		isDeobfEnvironment = (Boolean)Launch.blackboard.get("fml.deobfuscatedEnvironment");
+
+		if(className.equals("thaumcraft.common.blocks.crafting.BlockArcaneWorkbench"))
+			return TransformerArcaneWorkbench.transform(origCode);
+		if(className.equals("thaumcraft.common.blocks.crafting.BlockArcaneWorkbenchCharger"))
+			return TransformerArcaneWorkbenchCharger.transform(origCode);
+		return origCode;
+	}
+
+}

@@ -1,0 +1,53 @@
+{
+  "forge_marker": 1,
+  "variants": {
+      "greatwood": {
+      "model": "forge:item-layer", "transform": "forge:default-item",
+       "textures": {
+          "layer0": "thaumicwands:items/wand_rod_greatwood"
+        }
+      },
+        "reed": {
+         "model": "forge:item-layer", "transform": "forge:default-item",
+         "textures": {
+          "layer0": "thaumicwands:items/wand_rod_reed"
+        }
+      },
+        "blaze": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwands:items/wand_rod_blaze"
+        }
+      },
+        "ice": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwands:items/wand_rod_ice"
+        }
+      },
+        "obsidian": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwands:items/wand_rod_obsidian"
+        }
+      },
+        "quartz": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwands:items/wand_rod_quartz"
+        }
+      },
+      	"bone": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwands:items/wand_rod_bone"
+        }
+      },
+      	"silverwood": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwands:items/wand_rod_silverwood"
+        }
+      }
+     }
+    }
