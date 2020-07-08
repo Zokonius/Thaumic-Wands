@@ -5,7 +5,6 @@ import java.awt.Color;
 import org.lwjgl.opengl.GL11;
 
 import de.zpenguin.thaumicwands.item.ItemWand;
-import de.zpenguin.thaumicwands.item.TW_Items;
 import de.zpenguin.thaumicwands.main.ThaumicWands;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelBase;
@@ -13,7 +12,6 @@ import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
-import thaumcraft.common.items.casters.ItemFocus;
 
 public class ModelWand extends ModelBase {
 
@@ -63,12 +61,12 @@ public class ModelWand extends ModelBase {
 
 		if(wand.getFocus(wandStack)!=null) {
 		Color c = new Color(wand.getFocus(wandStack).getFocusColor(wand.getFocusStack(wandStack)));
-		GlStateManager.color(c.getRed()/255, c.getGreen()/255, c.getBlue()/255);
+		GL11.glColor3f(c.getRed()/255F, c.getGreen()/255F, c.getBlue()/255F);
 		GlStateManager.scale(1.1, 1.1, 1.1);
 		GlStateManager.translate(0, -0.125, 0);
 		Minecraft.getMinecraft().renderEngine.bindTexture(new ResourceLocation(ThaumicWands.modID, "textures/models/wand_focus.png"));
 		focus.render(scale);
-		GlStateManager.color(1, 1, 1, 1);
+		GL11.glColor3f(1F,1F,1F);
 		}
 		GL11.glPopMatrix();
 	}

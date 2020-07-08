@@ -131,7 +131,6 @@ public class EntityVisOrb extends Entity {
 		if(!world.isRemote) {
 			ItemStack wand = WandHelper.isWandInHotbarWithRoom(player, this.visAmount);
 			if(this.orbCooldown == 0 && player.xpCooldown == 0 && !wand.isEmpty()) {
-				System.out.println("asfgfsg");
 				RechargeHelper.rechargeItemBlindly(wand, player, this.visAmount);
 				player.xpCooldown = 2;
 				playSound(new SoundEvent(new ResourceLocation("random.orb")), 0.4F,

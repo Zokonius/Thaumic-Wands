@@ -39,7 +39,6 @@ public class TW_Items {
                 ModelLoader.setCustomModelResourceLocation(item, i, new ModelResourceLocation(ThaumicWands.modID + ":items/" + it.getBaseName(), it.getVariants()[i]));
 		 }
 
-
 		 else if(item instanceof ItemWand) {
 			ModelLoader.setCustomMeshDefinition(item, stack -> new ModelResourceLocation("thaumicwands:item_wand_3d"));
 		 }
