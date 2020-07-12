@@ -29,7 +29,6 @@ import thaumcraft.api.crafting.IArcaneRecipe;
 import thaumcraft.api.items.RechargeHelper;
 import thaumcraft.common.blocks.world.ore.ShardType;
 import thaumcraft.common.container.slot.SlotCrystal;
-import thaumcraft.common.items.casters.CasterManager;
 import thaumcraft.common.tiles.crafting.TileArcaneWorkbench;
 
 public class ContainerArcaneWorkbenchNew extends Container {

@@ -7,6 +7,7 @@ import org.lwjgl.opengl.GL11;
 import de.zpenguin.thaumicwands.container.ContainerArcaneWorkbenchNew;
 import de.zpenguin.thaumicwands.crafting.ThaumicWandsCraftingManager;
 import de.zpenguin.thaumicwands.main.ThaumicWands;
+import de.zpenguin.thaumicwands.util.LocalizationHelper;
 import de.zpenguin.thaumicwands.util.WandHelper;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
@@ -15,7 +16,6 @@ import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.text.translation.I18n;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 import thaumcraft.api.crafting.IArcaneRecipe;
@@ -86,7 +86,7 @@ public class GuiArcaneWorkbenchNew extends GuiContainer {
 		GlStateManager.translate((var5 + 168), (var6 + 46), 0.0F);
 		GlStateManager.scale(0.5F, 0.5F, 0.0F);
 		int charge = RechargeHelper.getCharge(getWand());
-		String text = (charge < 0 ? "0": charge)+ " " + I18n.translateToLocal("workbench.available");
+		String text = (charge < 0 ? "0": charge)+ " " + LocalizationHelper.localize("workbench.available");
 		int ll = this.fontRenderer.getStringWidth(text) / 2;
 		this.fontRenderer.drawString(text, -ll, 5, (Math.max(RechargeHelper.getCharge(getWand()),0) < cost) ? 15625838 : 7237358);
 		GlStateManager.scale(1F, 1F, 1F);
@@ -110,9 +110,9 @@ public class GuiArcaneWorkbenchNew extends GuiContainer {
 			GL11.glPushMatrix();
 			GlStateManager.translate((var5 + 168), (var6 + 38), 0.0F);
 			GlStateManager.scale(0.5F, 0.5F, 0.0F);
-			text = cost + " " + I18n.translateToLocal("workbench.cost");
+			text = cost + " " + LocalizationHelper.localize("workbench.cost");
 			if(discount > 0)
-				text = text + " (" + discount + "% " + I18n.translateToLocal("workbench.discount") + ")";
+				text = text + " (" + discount + "% " + LocalizationHelper.localize("workbench.discount") + ")";
 			ll = this.fontRenderer.getStringWidth(text) / 2;
 			this.fontRenderer.drawString(text, -ll, 10, 12648447);
 			GlStateManager.scale(1F, 1F, 1F);

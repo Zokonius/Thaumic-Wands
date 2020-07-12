@@ -10,9 +10,11 @@ import de.zpenguin.thaumicwands.api.item.wand.IWand;
 import de.zpenguin.thaumicwands.api.item.wand.IWandCap;
 import de.zpenguin.thaumicwands.api.item.wand.IWandRod;
 import de.zpenguin.thaumicwands.client.render.item.ItemWandRenderer;
+import de.zpenguin.thaumicwands.util.LocalizationHelper;
 import de.zpenguin.thaumicwands.util.WandHelper;
 import de.zpenguin.thaumicwands.wand.TW_Wands;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.renderer.tileentity.TileEntityItemStackRenderer;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
@@ -55,7 +57,6 @@ public class ItemWand extends ItemBase implements IWand {
 
 	public ItemWand(String name) {
 		super(name);
-		this.setTileEntityItemStackRenderer(new ItemWandRenderer());
 		this.setMaxStackSize(1);
 	}
 
@@ -82,9 +83,9 @@ public class ItemWand extends ItemBase implements IWand {
 	@Override
 	public String getItemStackDisplayName(ItemStack stack) {
 		String name = I18n.translateToLocal("item.wand.name");
-		name = name.replace("%CAP", I18n.translateToLocal("item.wand." + getCap(stack).getTag() + ".cap"));
-		name = name.replace("%ROD", I18n.translateToLocal("item.wand." + getRod(stack).getTag() + ".rod"));
-		name = name.replace("%OBJ", I18n.translateToLocal("item.wand.wand.obj"));
+		name = name.replace("%CAP", LocalizationHelper.localize("item.wand." + getCap(stack).getTag() + ".cap"));
+		name = name.replace("%ROD", LocalizationHelper.localize("item.wand." + getRod(stack).getTag() + ".rod"));
+		name = name.replace("%OBJ", LocalizationHelper.localize("item.wand.wand.obj"));
 		return name;
 	}
 
@@ -170,20 +171,20 @@ public class ItemWand extends ItemBase implements IWand {
 	    if (stack.hasTagCompound()) {
 	      String text = "";
 
-	      tooltip.add(TextFormatting.DARK_PURPLE + "" + I18n.translateToLocal("tc.vis.cost") + " " + (int) (WandHelper.getTotalDiscount(stack, null)*100F) + "%");
+	      tooltip.add(TextFormatting.DARK_PURPLE + LocalizationHelper.localize("tc.vis.cost") + " " + (int) (WandHelper.getTotalDiscount(stack, null)*100F) + "%");
 	      if(getCap(stack).getAspectDiscount().size()>0) {
-	      tooltip.add(TextFormatting.DARK_AQUA +I18n.translateToLocal("tw.crystal.discount"));
+	      tooltip.add(TextFormatting.DARK_AQUA + LocalizationHelper.localize("tw.crystal.discount"));
 	      for(Aspect a:getCap(stack).getAspectDiscount().getAspects())
-	    	  tooltip.add("§"+a.getChatcolor() + a.getName() +": "+getCap(stack).getAspectDiscount().getAmount(a));
+	    	  tooltip.add(LocalizationHelper.getTextColorFromAspect(a) + a.getName() +": "+getCap(stack).getAspectDiscount().getAmount(a));
 	      }
 
 	      ItemStack focus = getFocusStack(stack);
 	      if (focus != null && !focus.isEmpty()) {
 	        float amt = ((ItemFocus)focus.getItem()).getVisCost(focus) * getConsumptionModifier(stack, null, false);
 	        if (amt > 0.0F)
-	          text = "" + this.formatter.format(amt) + " " + I18n.translateToLocal("item.Focus.cost1");
+	          text = "" + this.formatter.format(amt) + " " + LocalizationHelper.localize("item.Focus.cost1");
 
-	      tooltip.add(TextFormatting.ITALIC + "" + TextFormatting.AQUA + I18n.translateToLocal("tc.vis.cost") + " " + text);
+	      tooltip.add(TextFormatting.ITALIC + "" + TextFormatting.AQUA + LocalizationHelper.localize("tc.vis.cost") + " " + text);
 	      }
 	    }
 	    if (getFocus(stack) != null) {

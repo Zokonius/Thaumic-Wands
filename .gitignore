@@ -10,6 +10,7 @@
 /crash-reports
 /generated
 /saves
+/world
 /run
 *.log
 *.gz
@@ -20,3 +21,9 @@ options.txt
 /gradle
 /.idea
 *.launch
+banned-ips.json
+banned-players.json
+eula.txt
+ops.json
+server.properties
+whitelist.json
