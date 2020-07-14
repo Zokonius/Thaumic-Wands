@@ -25,8 +25,10 @@ public class TileArcaneWorkbenchNew extends TileArcaneWorkbench implements ITick
 				if(hasCharger() && !getWand().isEmpty()) {
 					rechargeWand();
 				}
+			syncWand();
+
 		}
-		syncWand();
+
 	}
 
 	private boolean hasCharger() {

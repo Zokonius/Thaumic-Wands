@@ -28,7 +28,7 @@ public class ItemBaseMeta extends ItemBase {
     public String getUnlocalizedName(ItemStack stack) {
         if (stack.getMetadata() > variants.length)
             stack.setItemDamage(0);
-        return baseName + "_" + stack.getItemDamage();
+        return baseName + "_" + variants[stack.getItemDamage()];
     }
 
     public String getBaseName() {

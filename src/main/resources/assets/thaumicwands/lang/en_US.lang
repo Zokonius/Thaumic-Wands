@@ -1,25 +1,25 @@
 # --- Items ---
 
 #Wand Rods
-item_wand_rod_0.name=Greatwood Rod
-item_wand_rod_1.name=Reed Rod
-item_wand_rod_2.name=Blaze Rod
-item_wand_rod_3.name=Ice Rod
-item_wand_rod_4.name=Obsidian Rod
-item_wand_rod_5.name=Quartz Rod
-item_wand_rod_6.name=Bone Rod
-item_wand_rod_7.name=Silverwood Rod
+item_wand_rod_greatwood.name=Greatwood Rod
+item_wand_rod_reed.name=Reed Rod
+item_wand_rod_blaze.name=Blaze Rod
+item_wand_rod_ice.name=Ice Rod
+item_wand_rod_obsidian.name=Obsidian Rod
+item_wand_rod_quatz.name=Quartz Rod
+item_wand_rod_bone.name=Bone Rod
+item_wand_rod_silverwood.name=Silverwood Rod
 
 #Wand Caps
-item_wand_cap_0.name=Iron Cap
-item_wand_cap_1.name=Copper Cap
-item_wand_cap_2.name=Brass Cap
-item_wand_cap_3.name=Inert Silver Cap
-item_wand_cap_4.name=Charged Silver Cap
-item_wand_cap_5.name=Inert Thaumium Cap
-item_wand_cap_6.name=Charged Thaumium Cap
-item_wand_cap_7.name=Inert Void Cap
-item_wand_cap_8.name=Charged Void Cap
+item_wand_cap_iron.name=Iron Cap
+item_wand_cap_copper.name=Copper Cap
+item_wand_cap_brass.name=Brass Cap
+item_wand_cap_silver_inert.name=Inert Silver Cap
+item_wand_cap_silver.name=Charged Silver Cap
+item_wand_cap_thaumium_inert.name=Inert Thaumium Cap
+item_wand_cap_thaumium.name=Charged Thaumium Cap
+item_wand_cap_void_inert.name=Inert Void Cap
+item_wand_cap_void.name=Charged Void Cap
 
 # this is what is used to name the wand - the position of the variables can be altered so it makes more sense in other languages
 item.wand.name=%CAP %ROD %OBJ
@@ -95,33 +95,33 @@ research.CAP_VOID.stage.0=I've seen things. This metal, it is strong, it is powe
 research.CAP_VOID.stage.1=It works, it actually works. By infusing these caps with dark types of essentia I was able to create caps than conduct vis like nothing I've ever seen before, resulting in a discount of 20 %, but at what cost ?
 
 # Greatwood Rod
-research.ROD_GREATWOOD.0=On my journeys I came across a tree that is somehow different, my Wand is already made of wood, but this wood feels more magical, I probably should try to craft a new wand rod out of it.
-research.ROD_GREATWOOD.1=Greatwood is actually great, it took a little vis and some §8Perditio§r Crystals, but I was able to turn it into a new wand rod, that is a lot better than plain wood. It allowes one to store 200 vis, which allows whole new posiibilities, but I have seen some other trees lately.
+research.ROD_GREATWOOD.stage.0=On my journeys I came across a tree that is somehow different, my Wand is already made of wood, but this wood feels more magical, I probably should try to craft a new wand rod out of it.
+research.ROD_GREATWOOD.stage.1=Greatwood is actually great, it took a little vis and some §8Perditio§r Crystals, but I was able to turn it into a new wand rod, that is a lot better than plain wood. It allowes one to store 200 vis, which allows whole new posiibilities, but I have seen some other trees lately.
 
 # Reed Rod
-research.ROD_REED.0=I had an idea, what about sugarcane, it react naturally to §e aer§r, so it probably has some effects on my wand. It will take a little effort, but I have high hopes for this one. 
-research.ROD_REED.1=This is interresting, the infusion caused the sugarcane to hold 600 vis, which is more than greatwood, intrestingly I feel some weird resonace if I hold it high enough, I wonder what happens if it gets high enough.
+research.ROD_REED.stage.0=I had an idea, what about sugarcane, it react naturally to §e aer§r, so it probably has some effects on my wand. It will take a little effort, but I have high hopes for this one. 
+research.ROD_REED.stage.1=This is interresting, the infusion caused the sugarcane to hold 600 vis, which is more than greatwood, intrestingly I feel some weird resonace if I hold it high enough, I wonder what happens if it gets high enough.
 
 # Blaze Rod
-research.ROD_BLAZE.0=I had an idea, what about blaze rod, it react naturally to §6ignis§r and it has a fitting shape, so it probably has some effects on my wand. It will take a little effort, but I have high hopes for this one. 
-research.ROD_BLAZE.1=This is interresting, the infusion caused the blaze rod to hold 600 vis, which is more than greatwood, intrestingly I feel some weird resonace near to my furnace, I wonder what happens if it gets hot enough.
+research.ROD_BLAZE.stage.0=I had an idea, what about blaze rod, it react naturally to §6ignis§r and it has a fitting shape, so it probably has some effects on my wand. It will take a little effort, but I have high hopes for this one. 
+research.ROD_BLAZE.stage.1=This is interresting, the infusion caused the blaze rod to hold 600 vis, which is more than greatwood, intrestingly I feel some weird resonace near to my furnace, I wonder what happens if it gets hot enough.
 
 # Ice Rod
-research.ROD_ICE.0=I had an idea, what about ice, it react naturally to §9aqua§r, so it probably has some effects on my wand. It will take a little effort, but I have high hopes for this one. 
-research.ROD_ICE.1=This is interresting, the infusion caused the ice to hold 600 vis, which is more than greatwood, intrestingly I feel some weird resonace near to snow, I wonder what happens if it gets cold enough.
+research.ROD_ICE.stage.0=I had an idea, what about ice, it react naturally to §9aqua§r, so it probably has some effects on my wand. It will take a little effort, but I have high hopes for this one. 
+research.ROD_ICE.stage.1=This is interresting, the infusion caused the ice to hold 600 vis, which is more than greatwood, intrestingly I feel some weird resonace near to snow, I wonder what happens if it gets cold enough.
 
 # Obsidian Rod
-research.ROD_OBSIDIAN.0=I had an idea, what about obsidian, it react naturally to §2terra§r, so it probably has some effects on my wand. It will take a little effort, but I have high hopes for this one. 
-research.ROD_OBSIDIAN.1=This is interresting, the infusion caused the obsidain to hold 600 vis, which is more than greatwood, intrestingly I feel some weird resonace near the ground, I wonder what happens if it get low enough.
+research.ROD_OBSIDIAN.stage.0=I had an idea, what about obsidian, it react naturally to §2terra§r, so it probably has some effects on my wand. It will take a little effort, but I have high hopes for this one. 
+research.ROD_OBSIDIAN.stage.1=This is interresting, the infusion caused the obsidain to hold 600 vis, which is more than greatwood, intrestingly I feel some weird resonace near the ground, I wonder what happens if it get low enough.
 
 # Quartz Rod
-research.ROD_QUARTZ.0=I had an idea, what about quartz, it react naturally to §fordo§r, so it probably has some effects on my wand. It will take a little effort, but I have high hopes for this one. 
-research.ROD_QUARTZ.1=This is interresting, the infusion caused the quartz to hold 600 vis, which is more than greatwood.
+research.ROD_QUARTZ.stage.0=I had an idea, what about quartz, it react naturally to §fordo§r, so it probably has some effects on my wand. It will take a little effort, but I have high hopes for this one. 
+research.ROD_QUARTZ.stage.1=This is interresting, the infusion caused the quartz to hold 600 vis, which is more than greatwood.
 
 # Bone Rod
-research.ROD_BONE.0=I had an idea, what about bone, it react naturally to §8perditio§r, so it probably has some effects on my wand. It will take a little effort, how could I think this is a good idea.
-research.ROD_BONE.1=This is interresting, the infusion caused the bone to hold 600 vis, which is more than greatwood.
+research.ROD_BONE.stage.0=I had an idea, what about bone, it react naturally to §8perditio§r, so it probably has some effects on my wand. It will take a little effort, how could I think this is a good idea.
+research.ROD_BONE.stage.1=This is interresting, the infusion caused the bone to hold 600 vis, which is more than greatwood.
 
 #Silverwood ROD
-research.ROD_SILVERWOOD.0=The Wood of this tree seems to hold a much higher magical potential than all other plants I have seen so far, perfect for a sizable wand core, my ambition is high, and so will be the effort I will put into it.
-research.ROD_SILVERWOOD.1=I've done it, even though this wood had a lot of potential I was able to increase the amount of storable vis even further, it took quite a bit of essentia, but I am sure that 800 vis should be enough for now.
+research.ROD_SILVERWOOD.stage.0=The Wood of this tree seems to hold a much higher magical potential than all other plants I have seen so far, perfect for a sizable wand core, my ambition is high, and so will be the effort I will put into it.
+research.ROD_SILVERWOOD.stage.1=I've done it, even though this wood had a lot of potential I was able to increase the amount of storable vis even further, it took quite a bit of essentia, but I am sure that 800 vis should be enough for now.
