@@ -1,0 +1,42 @@
+{
+  "forge_marker": 1,
+  "variants": {
+
+  	"mithrillium_inert": {
+      	"model": "forge:item-layer", "transform": "forge:default-item",
+       	"textures": {
+          	"layer0": "thaumicwands:items/wand_cap_mithrillium_inert"
+    	}
+      },
+   "mithrillium": {
+         "model": "forge:item-layer", "transform": "forge:default-item",
+         "textures": {
+          "layer0": "thaumicwands:items/wand_cap_mithrillium"
+        }
+      },
+   "adaminite_inert": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwands:items/wand_cap_adaminite_inert"
+        }
+      },
+   "adaminite": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwands:items/wand_cap_adaminite"
+        }
+      },
+   "mithminite_inert": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwands:items/wand_cap_mithminite_inert"
+        }
+      },
+   "mithminite": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwands:items/wand_cap_mithminite"
+        }
+      }
+      }
+     }

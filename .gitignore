@@ -27,3 +27,6 @@ eula.txt
 ops.json
 server.properties
 whitelist.json
+asm/hammercore.xml
+mods/HammerLib-1.12.2-2.0.6.19.jar
+mods/ThaumicAdditions-1.12.2-12.4.3.jar

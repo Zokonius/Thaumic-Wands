@@ -2,6 +2,7 @@ package de.zpenguin.thaumicwands.main;
 
 import java.util.HashMap;
 
+import de.zpenguin.thaumicwands.compat.TW_Compat;
 import de.zpenguin.thaumicwands.crafting.recipe.RecipeWand;
 import de.zpenguin.thaumicwands.item.TW_Items;
 import de.zpenguin.thaumicwands.util.WandHelper;
@@ -35,6 +36,8 @@ public class TW_Recipes {
 		addCraftingRecipes();
 		addArcaneRecipes(r);
 		addInfusionRecipes();
+
+		TW_Compat.initRecipes();
 
 		RegistryManager.ACTIVE.getRegistry(GameData.RECIPES).remove(new ResourceLocation("thaumcraft:thaumometer"));
 	}

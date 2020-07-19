@@ -5,6 +5,7 @@ import static thaumcraft.api.research.ResearchEntry.EnumResearchMeta.*;
 
 import java.util.LinkedHashMap;
 
+import de.zpenguin.thaumicwands.compat.TW_Compat;
 import de.zpenguin.thaumicwands.item.TW_Items;
 import de.zpenguin.thaumicwands.util.WandHelper;
 import de.zpenguin.thaumicwands.util.research.ResearchHelper;
@@ -14,6 +15,9 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.event.CommandEvent;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.oredict.OreDictionary;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
@@ -25,8 +29,9 @@ import thaumcraft.api.research.ResearchEntry;
 import thaumcraft.api.research.ResearchStage;
 import thaumcraft.api.research.ResearchStage.Knowledge;
 import thaumcraft.common.config.ConfigResearch;
+import thaumcraft.common.lib.CommandThaumcraft;
 
-
+@EventBusSubscriber
 public class TW_Research {
 
 	public static ResearchCategory catThaumaturgy;
@@ -39,6 +44,24 @@ public class TW_Research {
 																.add(Aspect.AURA, 15)
 																.add(Aspect.PLANT, 15)
 																.add(Aspect.ENERGY, 10);
+
+
+	@SubscribeEvent
+	public static void commandEvent(CommandEvent ce) {
+		if(ce.getCommand() instanceof CommandThaumcraft && ce.getParameters().length > 0 && ce.getParameters()[0].equalsIgnoreCase("reload")){
+			new Thread(() -> {
+				while(ResearchCategories.getResearchCategory("BASICS").research.containsKey("THAUMATURGY"))
+				try {
+						Thread.sleep(10L);
+					}
+				catch(InterruptedException e){
+						e.printStackTrace();
+					}
+
+				init();
+			}).start();
+		}
+	}
 
 
 	public static void init() {
@@ -277,7 +300,7 @@ public class TW_Research {
         parents = new String[] {"ROD_GREATWOOD","INFUSION"};
         ResearchHelper.makeThaumaturgyResearch("ROD_SILVERWOOD", "Silverwood Wand Rod", 7, 5, new ItemStack(TW_Items.itemWandRod,1,7), stages, parents);
 
-
+        TW_Compat.initResearch();
 
 	}
 
