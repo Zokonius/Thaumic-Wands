@@ -10,6 +10,8 @@ item_wand_rod_quartz.name=石英杖柄
 item_wand_rod_bone.name=白骨杖柄
 item_wand_rod_silverwood.name=银木杖柄
 
+item_wand_rod_ta_adaminitewood.name= 鎏金木杖柄
+
 #Wand Caps
 item_wand_cap_iron.name=铁杖端
 item_wand_cap_copper.name=铜杖端
@@ -20,6 +22,13 @@ item_wand_cap_thaumium_inert.name=惰性神秘杖端
 item_wand_cap_thaumium.name=充能神秘杖端
 item_wand_cap_void_inert.name=惰性虚空杖端
 item_wand_cap_void.name=充能虚空杖端
+
+item_wand_cap_ta_mithrillium_inert.name=惰性秘银杖端
+item_wand_cap_ta_mithrillium.name=充能秘银杖端
+item_wand_cap_ta_adaminite_inert.name=惰性精金杖端
+item_wand_cap_ta_adaminite.name=充能精金杖端
+item_wand_cap_ta_mithminite_inert.name=惰性寒晶杖端
+item_wand_cap_ta_mithminite.name=充能寒晶杖端
 
 # this is what is used to name the wand - the position of the variables can be altered so it makes more sense in other languages
 item.wand.name=%CAP %ROD %OBJ
@@ -37,13 +46,17 @@ item.wand.ice.rod=冰霜
 item.wand.bone.rod=骨制
 item.wand.reed.rod=甘蔗
 item.wand.quartz.rod=石英
+item.wand.adaminitewood.rod=鎏金木
 
 item.wand.iron.cap=铁帽
 item.wand.brass.cap=黄铜绑扎
 item.wand.copper.cap=铜帽
 item.wand.silver.cap=银帽浮雕
-item.wand.thaumium.cap=神秘刻印
+item.wand.thaumium.cap=神秘浮雕
 item.wand.void.cap=虚空侵蚀
+item.wand.mithrillium.cap=寒晶谐律
+item.wand.adaminite.cap=精金华饰
+item.wand.mithminite.cap=秘银闪耀
 #
 
 # --- Inventory ---
@@ -60,7 +73,7 @@ card.focussing.name=专注
 card.focussing.text=你尝试将周围的灵气聚集到一个点上，从中你对如何操纵灵气有了更深入的理解。获得20点秘术学进度。
 # Conductance
 card.conductance.name=引导
-card.conductance.text=你尝试操纵灵气在流经杖端时的行为，从中你对杖端原理有了更深入的理解。获得25点秘术学进度.
+card.conductance.text=你尝试操纵灵气在流经杖端时的行为，从中你对杖端原理有了更深入的理解。获得25点秘术学进度。
 
 
 
@@ -125,3 +138,16 @@ research.ROD_BONE.stage.1=有趣极了，经过奥术注魔的骨头足足可以
 #Silverwood ROD
 research.ROD_SILVERWOOD.stage.0=这种树木所拥有的极高魔法潜力，在我生平所见过的所有植物之中是最顶尖的，所以它十分适合用于制作那种超大容量的杖柄。我的野心无比膨胀，促使我向其中投入大量的精力进行研究。
 research.ROD_SILVERWOOD.stage.1=我完成了，即便这种木材在最开始就展现了自身的优秀潜力，我还是可以进一步地提升其灵气容纳量，这一过程消耗了相当多的源质，但我相信800点vis的储量已经可以应付当下大多数情况了，这无疑很值得。
+
+#秘银杖端s
+research.CAP_MITHRILLIUM.stage.0=我不认为这世上还有比虚空金属更为优秀的金属，但秘银的出现令我对自己产生了怀疑。我的秘术学研究估计很快就到了尽头，我或许可以为自己再打造出一套在新的杖端...
+research.CAP_MITHRILLIUM.stage.1=激活这一杖端需要用到大量的世界盐，尽管如此，最终结果也物超所值，这一杖端可以提供25%的灵气消耗减免，以及1的全水晶消耗减免，但是这种杖端实在是太消耗世界盐了。
+
+research.CAP_ADAMINITE.stage.0=秘银性能优秀，但按照常理，精金要比秘银更好，但我怀疑，精金的杖端估计不只是给我带来扭曲这么简单。
+research.CAP_ADAMINITE.stage.1=果然没错，这一杖端实在是令人惊叹，它能够给予30%的灵气减免，以及2的水晶消耗减免。我真的该停下我的研究了，但或许，我还能走的更远？
+
+research.ROD_ADAMINITEWOOD.stage.0=我遇到了问题，我的研究进度推进不下去了，除非我能把手头的这一根银木杖柄替换掉。事实证明我真的很蠢，居然天真的以为800Vis的储量已经足够我的研究了。我应该准备准备一个新的杖柄设计方案，这次的杖柄一定要设计的足够大。或许现在就可以开始进行研究了。
+research.ROD_ADAMINITEWOOD.stage.1=通过向一根普通的银木杖端内注入了大量的精金，我将这一根银木杖端的灵气容量整整提高了四倍，我感觉我还可以继续深挖这一杖端的潜力，但当我握住这根杖端时，我却感到坐立难安，尤其是我一想到这根杖端能够引导的可怕的灵气量，我真的找不出其它东西能与它相媲美了，我感觉我握着的就是个怪物。
+
+research.CAP_MITHMINITE.stage.0=最终还是来了，这种金属内部充满了原始能量，我根本无法测量出它对灵气的操控性为几何。但我不在乎为什么它这么强大，我只想将它制作为我的杖端，我从未如此渴望过去做一件事。
+research.CAP_MITHMINITE.stage.1=我是不是傻了，居然想着用这些愚蠢的世界盐来与杖端进行反应。我向杖端中注入了我能找来的最纯净的原始能量，很昂贵，但是真的太值了，40%的灵气减免，3的水晶消耗减免，我感觉我还能继续研究，但我终究走到了这条路的尽头。
