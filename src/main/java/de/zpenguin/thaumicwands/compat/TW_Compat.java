@@ -4,8 +4,10 @@ import java.util.ArrayList;
 
 import com.google.common.collect.Lists;
 
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class TW_Compat {
 
@@ -16,6 +18,8 @@ public class TW_Compat {
 			compats.add(new ThaumicAdditionsCompat());
 		if(Loader.isModLoaded("thaumicbases"))
 			compats.add(new ThaumicBasesCompat());
+		if(Loader.isModLoaded("planarartifice"))
+			compats.add(new PlanarArtificeCompat());
 	}
 
 	public static void init() {
@@ -43,6 +47,10 @@ public class TW_Compat {
 		public void initResearch();
 
 	}
+
+    public static ItemStack getItem(String name, int meta) {
+    	return GameRegistry.makeItemStack(name, meta, 1, null);
+    }
 
 
 }

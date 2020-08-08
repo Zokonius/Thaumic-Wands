@@ -32,6 +32,8 @@ item_wand_cap_ta_mithminite.name=Charged Mithminite Cap
 
 item_wand_cap_tb_thauminite.name=Thauminite Cap
 
+item_wand_cap_pa_alkimium.name=Alkimium Cap
+
 # this is what is used to name the wand - the position of the variables can be altered so it makes more sense in other languages
 item.wand.name=%CAP %ROD %OBJ
 #
@@ -62,6 +64,9 @@ item.wand.adaminite.cap=Adaminite Adorned
 item.wand.mithminite.cap=Mithminite Ornamented
 
 item.wand.thauminite.cap=Thauminite Bossed
+
+item.wand.alkimium.cap=Alkimium Crowned
+
 #
 
 # --- Inventory ---
@@ -144,6 +149,8 @@ research.ROD_BONE.stage.1=This is interresting, the infusion caused the bone to 
 research.ROD_SILVERWOOD.stage.0=The Wood of this tree seems to hold a much higher magical potential than all other plants I have seen so far, perfect for a sizable wand core, my ambition is high, and so will be the effort I will put into it.
 research.ROD_SILVERWOOD.stage.1=I've done it, even though this wood had a lot of potential I was able to increase the amount of storable vis even further, it took quite a bit of essentia, but I am sure that 800 vis should be enough for now.
 
+# - Thaumic Additions Compat -
+
 #Mithrillium Caps
 research.CAP_MITHRILLIUM.stage.0=I never expected there to be a metal even more potent than void metal, but this is truely baffeling, maybe my thaumaturgy studies have ended to soon, maybe I should try forging myself a new pair of wand caps...
 research.CAP_MITHRILLIUM.stage.1=It took a lot of salis mundus to get these to work again, but the result was definitly worth it, these caps provide a 25% discount and even a 1 crystal discount on every aspect, but why does it always take so much salis mundus though ?
@@ -160,6 +167,14 @@ research.ROD_ADAMINITEWOOD.stage.1=By infusing a mundane silverwood rod with a l
 research.CAP_MITHMINITE.stage.0=This has to be it, this metal, so full of primal energy, so strong of a vis conductor I can't even measure it, I don't care how but I want this for my wand caps, I never desired something more than this.
 research.CAP_MITHMINITE.stage.1=Who was I to think that this metal could simply be reactivated by some of this foolish salis mundus, it took some of the purest primal energy I could find, but it was worth it, a 40% vis discount, and a three crystal discount on all of the aspects, I doubt I could go further with this, this is the end.
 
+# - Thaumic Bases -
+
 #Thauminite Caps
 research.CAP_THAUMINITE.stage.0=This metal seems to be quite similar to thaumium, but it is so crystalline and ordered, this should take next to none effort to turn it into a pair of working wand caps.
 research.CAP_THAUMINITE.stage.1=Well, that was easier than I expected, it didn't even took an infusion, just some plain salis mundus, while forging the caps, well good for me. A 15% discount and one §7ORDO§r crystal less, that is quite an amazing deal.
+
+# - Planar Artifice -
+
+#Alkimium Caps
+research.CAP_ALKIMIUM.stage.0=Ever since I discovered this Alkimium I replaced a lot of brass with it, so maybe it is on time that replace my brass caps with it aswell.
+research.CAP_ALKIMIUM.stage.1=I was not exacly hopeful, when I thought of this, since alkimium is just a brass derivative, but I did not exspect it to resonate it with so many aspects. <br> While a 5% reduction seems like not that much, alkimium offers a single crystal discount for §3AQUA§r,§2TERRA§r and §7ORDO§r, which is quite something.  

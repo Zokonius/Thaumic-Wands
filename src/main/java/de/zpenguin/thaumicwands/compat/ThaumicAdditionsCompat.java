@@ -32,7 +32,7 @@ public class ThaumicAdditionsCompat implements ICompat {
         AspectList aspects;
 
         aspects = new AspectList().add(Aspect.AIR,1).add(Aspect.FIRE,1).add(Aspect.WATER,1).add(Aspect.EARTH,1).add(Aspect.ORDER,1).add(Aspect.ENTROPY,1);
-		new WandCap("mithrilium", 0.75F, aspects, new ItemStack(itemWandCap,1,1), 30);
+		new WandCap("mithrillium", 0.75F, aspects, new ItemStack(itemWandCap,1,1), 30);
 
         aspects = new AspectList().add(Aspect.AIR,2).add(Aspect.FIRE,2).add(Aspect.WATER,2).add(Aspect.EARTH,2).add(Aspect.ORDER,2).add(Aspect.ENTROPY,2);
 		new WandCap("adaminite", 0.7F, aspects, new ItemStack(itemWandCap,1,3), 35);
