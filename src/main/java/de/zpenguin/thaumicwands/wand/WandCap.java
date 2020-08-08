@@ -1,6 +1,5 @@
 package de.zpenguin.thaumicwands.wand;
 
-import de.zpenguin.thaumicwands.api.ThaumicWandsAPI;
 import de.zpenguin.thaumicwands.api.item.wand.IWandCap;
 import de.zpenguin.thaumicwands.main.ThaumicWands;
 import net.minecraft.item.ItemStack;
@@ -38,7 +37,7 @@ public class WandCap implements IWandCap {
 		this.aspectDiscount = aspectDiscount;
 		this.research = research;
 
-		ThaumicWandsAPI.registerWandCap(tag, this);
+		TW_Wands.CAPS.add(this);
 	}
 
 	@Override

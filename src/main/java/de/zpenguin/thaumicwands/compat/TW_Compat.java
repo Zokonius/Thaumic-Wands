@@ -18,6 +18,11 @@ public class TW_Compat {
 			compats.add(new ThaumicBasesCompat());
 	}
 
+	public static void init() {
+		for(ICompat c: compats)
+			c.init();
+	}
+
 	public static void initRecipes() {
 		for(ICompat c: compats)
 			c.initRecipes();
@@ -28,6 +33,7 @@ public class TW_Compat {
 			c.initResearch();
 	}
 
+
 	public static interface ICompat {
 
 		public void init();
@@ -37,5 +43,6 @@ public class TW_Compat {
 		public void initResearch();
 
 	}
+
 
 }

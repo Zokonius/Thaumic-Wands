@@ -4,8 +4,7 @@ import de.zpenguin.thaumicwands.api.ThaumicWandsAPI;
 import de.zpenguin.thaumicwands.api.item.wand.IWandCap;
 import de.zpenguin.thaumicwands.api.item.wand.IWandRod;
 import de.zpenguin.thaumicwands.api.recipe.IPlayerDependentArcaneRecipe;
-import de.zpenguin.thaumicwands.util.WandHelper;
-import de.zpenguin.thaumicwands.wand.TW_Wands;
+import de.zpenguin.thaumicwands.util.WandWrapper;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.ItemStack;
@@ -17,14 +16,12 @@ import net.minecraftforge.registries.IForgeRegistryEntry.Impl;
 import thaumcraft.api.ThaumcraftApiHelper;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
-import thaumcraft.api.capabilities.ThaumcraftCapabilities;
 import thaumcraft.api.crafting.IArcaneWorkbench;
 import thaumcraft.api.items.ItemsTC;
 
 public class RecipeWand extends Impl<IRecipe> implements IPlayerDependentArcaneRecipe {
 
-	private IWandRod rod = null;
-	private IWandCap cap = null;
+	private WandWrapper wrapper = new WandWrapper();
 
 	public RecipeWand(ResourceLocation name) {
 		this.setRegistryName(name);
@@ -36,42 +33,46 @@ public class RecipeWand extends Impl<IRecipe> implements IPlayerDependentArcaneR
 			return false;
 		int[] empty = {0, 1, 3, 5, 7, 8};
 		for(int i : empty)
-			if(!inv.getStackInSlot(i).isEmpty())
-				return false;
-		if(!checkItems(inv.getStackInSlot(2), inv.getStackInSlot(6), inv.getStackInSlot(4), player))
+		if(!inv.getStackInSlot(i).isEmpty())
+			return false;
+		if(!getParts(inv).isValidWand())
+			return false;
+		if(!wrapper.canCraft(player))
 			return false;
 		if(!checkCrystals(inv))
 			return false;
 		return true;
+
 	}
 
-	private boolean checkItems(ItemStack cap1, ItemStack cap2, ItemStack rod, EntityPlayer player) {
-		if(cap1.isEmpty() || cap2.isEmpty() || rod.isEmpty())
-			return false;
+	private WandWrapper getParts(InventoryCrafting inv) {
 
-		if(ItemStack.areItemsEqual(cap1, cap2)) {
-			for(IWandCap wc : ThaumicWandsAPI.wandCaps.values())
-				if(ItemStack.areItemsEqual(cap1, wc.getItemStack())) {
-					if(ThaumcraftCapabilities.knowsResearch(player, wc.getRequiredResearch())) {
-						this.cap = wc;
-						break;
-					}
-				}
-			for(IWandRod wr : ThaumicWandsAPI.wandRods.values())
-				if(ItemStack.areItemsEqual(rod, wr.getItemStack())
-						&& ThaumcraftCapabilities.knowsResearch(player, wr.getRequiredResearch())) {
-					this.rod = wr;
-					break;
-				}
+		if(inv.getStackInSlot(2).isEmpty() || inv.getStackInSlot(6).isEmpty() || inv.getStackInSlot(4).isEmpty())
+			return new WandWrapper();
 
-		}
-		return this.rod != null && this.cap != null && (this.rod.getTag() != "wood" || this.cap.getTag() != "iron");
+		if(!ItemStack.areItemsEqual(inv.getStackInSlot(2), inv.getStackInSlot(6)))
+			return new WandWrapper();
+
+		for(IWandCap wc : ThaumicWandsAPI.wandCaps.values())
+			if(ItemStack.areItemsEqual(inv.getStackInSlot(2), wc.getItemStack())) {
+				wrapper.setCap(wc);
+				break;
+			}
+
+		for(IWandRod wr : ThaumicWandsAPI.wandRods.values())
+			if(ItemStack.areItemsEqual(inv.getStackInSlot(4), wr.getItemStack())) {
+				wrapper.setRod(wr);
+				break;
+			}
+
+		return wrapper;
+
 	}
 
 	private boolean checkCrystals(InventoryCrafting inv) {
-		if(this.getCrystals() != null && inv.getSizeInventory() >= 15)
-			for(Aspect aspect : this.getCrystals().getAspects()) {
-				ItemStack cs = ThaumcraftApiHelper.makeCrystal(aspect, this.getCrystals().getAmount(aspect));
+		if(inv.getSizeInventory() >= 15)
+			for(Aspect aspect : getCrystals().getAspects()) {
+				ItemStack cs = ThaumcraftApiHelper.makeCrystal(aspect, getCrystals().getAmount(aspect));
 				boolean b = false;
 				for(int i = 0; i < 6; i++) {
 					ItemStack itemstack1 = inv.getStackInSlot(9 + i);
@@ -82,32 +83,24 @@ public class RecipeWand extends Impl<IRecipe> implements IPlayerDependentArcaneR
 				}
 				if(!b)
 					return false;
+
 			}
 		return true;
 	}
 
 	@Override
-	public ItemStack getCraftingResult(InventoryCrafting var1) {
-		return rod == null || cap == null ? WandHelper.getWandWithParts("wood", "iron") : WandHelper.getWandWithParts(rod.getTag(), cap.getTag());
+	public ItemStack getCraftingResult(InventoryCrafting inv) {
+		return wrapper.makeWand();
 	}
 
 	@Override
 	public AspectList getCrystals() {
-		AspectList list = new AspectList();
-		if(rod == null || cap == null)
-			return list;
-		for(Aspect a : Aspect.getPrimalAspects())
-			list.add(a, Math.max(rod.getCraftCost(), cap.getCraftCost()));
-		return list;
+		return wrapper.getCrystals();
 	}
 
 	@Override
 	public int getVis() {
-		if(rod == null || cap == null)
-			return 0;
-		if(rod == TW_Wands.rodWood && cap == TW_Wands.capIron)
-			return 0;
-		return rod.getCraftCost() * cap.getCraftCost();
+		return wrapper.getVisCost();
 	}
 
 	@Override

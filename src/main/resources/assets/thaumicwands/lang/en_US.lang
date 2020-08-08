@@ -6,7 +6,7 @@ item_wand_rod_reed.name=Reed Rod
 item_wand_rod_blaze.name=Blaze Rod
 item_wand_rod_ice.name=Ice Rod
 item_wand_rod_obsidian.name=Obsidian Rod
-item_wand_rod_quatz.name=Quartz Rod
+item_wand_rod_quartz.name=Quartz Rod
 item_wand_rod_bone.name=Bone Rod
 item_wand_rod_silverwood.name=Silverwood Rod
 
@@ -29,6 +29,8 @@ item_wand_cap_ta_adaminite_inert.name=Inert Adaminite Cap
 item_wand_cap_ta_adaminite.name=Charged Adaminite Cap
 item_wand_cap_ta_mithminite_inert.name=Inert Mithminite Cap
 item_wand_cap_ta_mithminite.name=Charged Mithminite Cap
+
+item_wand_cap_tb_thauminite.name=Thauminite Cap
 
 # this is what is used to name the wand - the position of the variables can be altered so it makes more sense in other languages
 item.wand.name=%CAP %ROD %OBJ
@@ -54,9 +56,12 @@ item.wand.copper.cap=Copper Capped
 item.wand.silver.cap=Silver Bossed
 item.wand.thaumium.cap=Thaumium Bossed
 item.wand.void.cap=Void Aspected
+
 item.wand.mithrillium.cap=Mithrillium Attuned
 item.wand.adaminite.cap=Adaminite Adorned
 item.wand.mithminite.cap=Mithminite Ornamented
+
+item.wand.thauminite.cap=Thauminite Bossed
 #
 
 # --- Inventory ---
@@ -135,7 +140,7 @@ research.ROD_QUARTZ.stage.1=This is interresting, the infusion caused the quartz
 research.ROD_BONE.stage.0=I had an idea, what about bone, it react naturally to §8perditio§r, so it probably has some effects on my wand. It will take a little effort, how could I think this is a good idea.
 research.ROD_BONE.stage.1=This is interresting, the infusion caused the bone to hold 600 vis, which is more than greatwood.
 
-#Silverwood ROD
+#Silverwood Rod
 research.ROD_SILVERWOOD.stage.0=The Wood of this tree seems to hold a much higher magical potential than all other plants I have seen so far, perfect for a sizable wand core, my ambition is high, and so will be the effort I will put into it.
 research.ROD_SILVERWOOD.stage.1=I've done it, even though this wood had a lot of potential I was able to increase the amount of storable vis even further, it took quite a bit of essentia, but I am sure that 800 vis should be enough for now.
 
@@ -143,11 +148,18 @@ research.ROD_SILVERWOOD.stage.1=I've done it, even though this wood had a lot of
 research.CAP_MITHRILLIUM.stage.0=I never expected there to be a metal even more potent than void metal, but this is truely baffeling, maybe my thaumaturgy studies have ended to soon, maybe I should try forging myself a new pair of wand caps...
 research.CAP_MITHRILLIUM.stage.1=It took a lot of salis mundus to get these to work again, but the result was definitly worth it, these caps provide a 25% discount and even a 1 crystal discount on every aspect, but why does it always take so much salis mundus though ?
 
+#Adaminite Caps
 research.CAP_ADAMINITE.stage.0=When Mithrillium is already great, then what about Adaminite it should be even better, it is only logical, but I have a feeling that not only the Warp will affect my sanity this time.
 research.CAP_ADAMINITE.stage.1=It turns out I was right, these caps truely are marvelous, they provide a 30% disount and even a doubled primal discount, maybe I should stop now, or maybe I should go even further.
 
+#Adamintewood Rod
 research.ROD_ADAMINITEWOOD.stage.0=I've got a problem, it looks like I can not proceed any further unless I find myself an alternative to this silverwood rod, I was a fool thinking 800 vis is enough, I should have started sooner to create a bigger vis storage, but now seems like a good time to start.
 research.ROD_ADAMINITEWOOD.stage.1=By infusing a mundane silverwood rod with a lot of adaminite, I was able to make a vessel strong enough to quadruple the vis capacity of the silverwood rod, I know I could have gone further, but I feel uncomfortable dirctly touching such a huge amount of vis with my bare hands, especialy when such a big part of it conducts vis like nothing else in the universe.
 
+#Mithminite Caps
 research.CAP_MITHMINITE.stage.0=This has to be it, this metal, so full of primal energy, so strong of a vis conductor I can't even measure it, I don't care how but I want this for my wand caps, I never desired something more than this.
 research.CAP_MITHMINITE.stage.1=Who was I to think that this metal could simply be reactivated by some of this foolish salis mundus, it took some of the purest primal energy I could find, but it was worth it, a 40% vis discount, and a three crystal discount on all of the aspects, I doubt I could go further with this, this is the end.
+
+#Thauminite Caps
+research.CAP_THAUMINITE.stage.0=This metal seems to be quite similar to thaumium, but it is so crystalline and ordered, this should take next to none effort to turn it into a pair of working wand caps.
+research.CAP_THAUMINITE.stage.1=Well, that was easier than I expected, it didn't even took an infusion, just some plain salis mundus, while forging the caps, well good for me. A 15% discount and one §7ORDO§r crystal less, that is quite an amazing deal.

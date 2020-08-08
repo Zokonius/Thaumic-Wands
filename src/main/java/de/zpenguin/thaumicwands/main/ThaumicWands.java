@@ -8,33 +8,33 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid=ThaumicWands.modID, name=ThaumicWands.modName, version=ThaumicWands.version, dependencies=ThaumicWands.dependencies)
+@Mod(modid = ThaumicWands.modID, name = ThaumicWands.modName, version = ThaumicWands.version, dependencies = ThaumicWands.dependencies)
 public class ThaumicWands {
 
-    public static final String modID = "thaumicwands";
-    public static final String modName = "Thaumic Wands";
-    public static final String version = "1.1.0";
-    public static final String dependencies = "required-after:thaumcraft;";
+	public static final String modID = "thaumicwands";
+	public static final String modName = "Thaumic Wands";
+	public static final String version = "1.2.0";
+	public static final String dependencies = "required-after:thaumcraft;";
 
-    @Instance
-    public static ThaumicWands instance;
+	@Instance
+	public static ThaumicWands instance;
 
 	@SidedProxy(clientSide = "de.zpenguin.thaumicwands.client.ClientProxy", serverSide = "de.zpenguin.thaumicwands.main.CommonProxy")
 	public static CommonProxy proxy;
 
-    @EventHandler
-    public void preInit(FMLPreInitializationEvent e) {
-    	proxy.preInit(e);
-    }
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent e) {
+		proxy.preInit(e);
+	}
 
-    @EventHandler
-    public void init(FMLInitializationEvent e) {
-    	proxy.init(e);
-    }
+	@EventHandler
+	public void init(FMLInitializationEvent e) {
+		proxy.init(e);
+	}
 
-    @EventHandler
-    public void postInit(FMLPostInitializationEvent e) {
-    	proxy.postInit(e);
-    }
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent e) {
+		proxy.postInit(e);
+	}
 
 }

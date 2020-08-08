@@ -1,6 +1,5 @@
 package de.zpenguin.thaumicwands.wand;
 
-import de.zpenguin.thaumicwands.api.ThaumicWandsAPI;
 import de.zpenguin.thaumicwands.api.item.wand.IWandRod;
 import de.zpenguin.thaumicwands.api.item.wand.IWandUpdate;
 import de.zpenguin.thaumicwands.main.ThaumicWands;
@@ -37,7 +36,8 @@ public class WandRod implements IWandRod {
 		this.craftCost = craftCost;
 		this.update = update;
 		this.research = research;
-		ThaumicWandsAPI.registerWandRod(tag, this);
+
+		TW_Wands.RODS.add(this);
 	}
 
 	@Override

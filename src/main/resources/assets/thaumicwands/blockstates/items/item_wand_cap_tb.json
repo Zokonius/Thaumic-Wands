@@ -1,0 +1,12 @@
+{
+  "forge_marker": 1,
+  "variants": {
+
+  	"thauminite": {
+      	"model": "forge:item-layer", "transform": "forge:default-item",
+       	"textures": {
+          	"layer0": "thaumicwands:items/wand_cap_thauminite"
+    	}
+      }
+      }
+     }

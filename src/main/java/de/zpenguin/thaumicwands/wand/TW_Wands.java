@@ -1,5 +1,8 @@
 package de.zpenguin.thaumicwands.wand;
 
+import java.util.ArrayList;
+
+import de.zpenguin.thaumicwands.api.ThaumicWandsAPI;
 import de.zpenguin.thaumicwands.api.item.wand.IWandCap;
 import de.zpenguin.thaumicwands.api.item.wand.IWandRod;
 import de.zpenguin.thaumicwands.item.TW_Items;
@@ -13,6 +16,9 @@ import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 
 public class TW_Wands {
+
+	public static final ArrayList<IWandCap> CAPS = new ArrayList<IWandCap>();
+	public static final ArrayList<IWandRod> RODS = new ArrayList<IWandRod>();
 
 	public static final IWandCap capIron = new WandCap("iron", 1F, new ItemStack(TW_Items.itemWandCap, 1, 0), 1, "UNLOCKTHAUMATURGY");
 	public static final IWandCap capCopper = new WandCap("copper", 1F, new AspectList().add(Aspect.ORDER,1).add(Aspect.ENTROPY,1),new ItemStack(TW_Items.itemWandCap, 1, 1), 5);
@@ -31,5 +37,11 @@ public class TW_Wands {
 	public static final IWandRod rodBone = new WandRod("bone", 600, new ItemStack(TW_Items.itemWandRod, 1, 6), 10);
 	public static final IWandRod rodSilverwood = new WandRod("silverwood", 800, new ItemStack(TW_Items.itemWandRod, 1, 7), 15);
 
+	public static void registerWandParts() {
+		for(IWandCap cap: CAPS)
+			ThaumicWandsAPI.registerWandCap(cap.getTag(), cap);
+		for(IWandRod rod: RODS)
+			ThaumicWandsAPI.registerWandRod(rod.getTag(), rod);
+	}
 
 }
