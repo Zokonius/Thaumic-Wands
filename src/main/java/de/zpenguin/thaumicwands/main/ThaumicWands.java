@@ -5,6 +5,7 @@ import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
@@ -13,7 +14,7 @@ public class ThaumicWands {
 
 	public static final String modID = "thaumicwands";
 	public static final String modName = "Thaumic Wands";
-	public static final String version = "1.2.1";
+	public static final String version = "1.2.2";
 	public static final String dependencies = "required-after:thaumcraft;";
 
 	@Instance
@@ -35,6 +36,11 @@ public class ThaumicWands {
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent e) {
 		proxy.postInit(e);
+	}
+
+	@EventHandler
+	public void loadComplete(FMLLoadCompleteEvent e) {
+		proxy.loadComplete(e);
 	}
 
 }

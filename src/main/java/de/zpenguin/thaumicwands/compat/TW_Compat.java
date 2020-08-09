@@ -37,6 +37,11 @@ public class TW_Compat {
 			c.initResearch();
 	}
 
+	public static void loadComplete() {
+		for(ICompat c:compats)
+			c.loadComplete();
+	}
+
 
 	public static interface ICompat {
 
@@ -45,6 +50,8 @@ public class TW_Compat {
 		public void initRecipes();
 
 		public void initResearch();
+
+		public default void loadComplete() {}
 
 	}
 

@@ -25,7 +25,7 @@ public class PlanarArtificeCompat implements ICompat {
 	@Override
 	public void init() {
 		new WandCap("alkimium", 0.95F,new AspectList().add(Aspect.WATER,1).add(Aspect.EARTH,1).add(Aspect.ORDER,1), new ItemStack(itemWandCapPA, 1, 0), 15);
-		new WandCap("bismuth", 0.85F, new ItemStack(itemWandCapPA, 1, 1), 20);
+		new WandCap("bismuth", 0.90F, new ItemStack(itemWandCapPA, 1, 1), 20);
 	}
 
 	@Override
@@ -61,8 +61,6 @@ public class PlanarArtificeCompat implements ICompat {
         };
         parents = new String[] {"CAP_BRASS", "ALKIMIUM"};
         ResearchHelper.makeResearch("CAP_ALKIMIUM", "THAUMATURGY", "Alkimium Wand Caps", -5, -1, new ItemStack(itemWandCapPA), stages, parents);
-
-
 	}
 
 }
