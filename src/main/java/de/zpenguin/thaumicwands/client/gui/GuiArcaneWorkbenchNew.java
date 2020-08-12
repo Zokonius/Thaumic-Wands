@@ -62,7 +62,6 @@ public class GuiArcaneWorkbenchNew extends GuiContainer {
 			cost = WandHelper.getActualVisCost(cost, getWand(), this.ip.player);
 			discount = (int) (WandHelper.getTotalDiscount(getWand(), this.ip.player) * 100F);
 			crystals = result.getCrystals();
-		}
 
 		if(crystals != null) {
 			GlStateManager.blendFunc(770, 1);
@@ -81,6 +80,7 @@ public class GuiArcaneWorkbenchNew extends GuiContainer {
 			GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
 			GlStateManager.blendFunc(770, 771);
 		}
+		}
 		GlStateManager.disableBlend();
 		GlStateManager.pushMatrix();
 		GlStateManager.translate((var5 + 168), (var6 + 46), 0.0F);
@@ -93,7 +93,7 @@ public class GuiArcaneWorkbenchNew extends GuiContainer {
 		GlStateManager.popMatrix();
 
 		if(cost > 0) {
-			if(this.tileEntity.auraVisClient < cost) {
+			if(charge < cost) {
 				GlStateManager.pushMatrix();
 				GlStateManager.color(0.33F, 0.33F, 0.33F, 0.66F);
 		        GL11.glEnable(GL11.GL_LIGHTING);

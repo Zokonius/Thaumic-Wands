@@ -14,7 +14,7 @@ public class ThaumicWands {
 
 	public static final String modID = "thaumicwands";
 	public static final String modName = "Thaumic Wands";
-	public static final String version = "1.2.2";
+	public static final String version = "1.2.3";
 	public static final String dependencies = "required-after:thaumcraft;";
 
 	@Instance

@@ -104,8 +104,11 @@ public class ContainerArcaneWorkbenchNew extends Container {
 
 		if(hasVis && hasCrystals)
 			slotChangedCraftingGrid(this.tileEntity.getWorld(), this.ip.player, this.tileEntity.inventoryCraft, this.craftResult);
-		else
+		else {
 			this.craftResult.setInventorySlotContents(0, ItemStack.EMPTY);
+			if(!this.tileEntity.getWorld().isRemote)
+			((EntityPlayerMP)this.ip.player).connection.sendPacket(new SPacketSetSlot(this.windowId, 16, ItemStack.EMPTY));
+		}
 
 		super.detectAndSendChanges();
 	}
@@ -120,7 +123,7 @@ public class ContainerArcaneWorkbenchNew extends Container {
 					&& (arecipe.isDynamic() || !world.getGameRules().getBoolean("doLimitedCrafting")
 							|| entityplayermp.getRecipeBook().isUnlocked(arecipe))
 					&& ThaumcraftCapabilities.getKnowledge(player).isResearchKnown(arecipe.getResearch())) {
-				craftRes.setRecipeUsed( arecipe);
+				craftRes.setRecipeUsed(arecipe);
 				itemstack = arecipe.getCraftingResult(craftMat);
 			} else {
 				InventoryCrafting craftInv = new InventoryCrafting((Container) new ContainerDummy(), 3, 3);
@@ -151,6 +154,8 @@ public class ContainerArcaneWorkbenchNew extends Container {
 		return (this.tileEntity.getWorld().getTileEntity(this.tileEntity.getPos()) != this.tileEntity) ? false
 				: ((par1EntityPlayer.getDistanceSqToCenter(this.tileEntity.getPos()) <= 64.0D));
 	}
+
+
 
 	@Override
 	public ItemStack transferStackInSlot(EntityPlayer par1EntityPlayer, int slotIndex) {
