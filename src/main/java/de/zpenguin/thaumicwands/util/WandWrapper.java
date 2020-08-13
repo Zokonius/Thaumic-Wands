@@ -71,4 +71,11 @@ public class WandWrapper {
 		return this;
 	}
 
+	@Override
+	public String toString() {
+		if(rod != null && cap != null)
+			return "Rod: "+rod.getTag()+" | Cap: "+cap.getTag();
+		return "";
+	}
+
 }

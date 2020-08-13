@@ -15,9 +15,9 @@ public class ThaumicWandsCraftingManager {
 			IRecipe recipe = (IRecipe) CraftingManager.REGISTRY.getObject(key);
 			if(recipe == null)
 				return null;
-			if(recipe instanceof IPlayerDependentArcaneRecipe && ((IPlayerDependentArcaneRecipe) recipe).matches(matrix, player.world, player))
+			else if(recipe instanceof IPlayerDependentArcaneRecipe && ((IPlayerDependentArcaneRecipe) recipe).matches(matrix, player.world, player))
 				return (IArcaneRecipe) recipe;
-			if(recipe instanceof IArcaneRecipe && recipe.matches(matrix, player.world))
+			else if(recipe instanceof IArcaneRecipe && recipe.matches(matrix, player.world))
 				return (IArcaneRecipe) recipe;
 		}
 		return null;

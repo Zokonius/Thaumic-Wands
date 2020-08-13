@@ -29,6 +29,7 @@ public class RecipeWand extends Impl<IRecipe> implements IPlayerDependentArcaneR
 
 	@Override
 	public boolean matches(InventoryCrafting inv, World world, EntityPlayer player) {
+
 		if(!(inv instanceof IArcaneWorkbench))
 			return false;
 		int[] empty = {0, 1, 3, 5, 7, 8};
@@ -47,11 +48,14 @@ public class RecipeWand extends Impl<IRecipe> implements IPlayerDependentArcaneR
 
 	private WandWrapper getParts(InventoryCrafting inv) {
 
+		wrapper = new WandWrapper();
+
 		if(inv.getStackInSlot(2).isEmpty() || inv.getStackInSlot(6).isEmpty() || inv.getStackInSlot(4).isEmpty())
-			return new WandWrapper();
+			return wrapper;
 
 		if(!ItemStack.areItemsEqual(inv.getStackInSlot(2), inv.getStackInSlot(6)))
-			return new WandWrapper();
+			return wrapper;
+
 
 		for(IWandCap wc : ThaumicWandsAPI.wandCaps.values())
 			if(ItemStack.areItemsEqual(inv.getStackInSlot(2), wc.getItemStack())) {
@@ -64,6 +68,7 @@ public class RecipeWand extends Impl<IRecipe> implements IPlayerDependentArcaneR
 				wrapper.setRod(wr);
 				break;
 			}
+
 
 		return wrapper;
 
@@ -90,7 +95,7 @@ public class RecipeWand extends Impl<IRecipe> implements IPlayerDependentArcaneR
 
 	@Override
 	public ItemStack getCraftingResult(InventoryCrafting inv) {
-		return wrapper.makeWand();
+		return getParts(inv).isValidWand() ? getParts(inv).makeWand() : ItemStack.EMPTY;
 	}
 
 	@Override
