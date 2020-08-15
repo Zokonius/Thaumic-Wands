@@ -54,6 +54,9 @@ public class TW_Recipes {
         crystals = new AspectList().add(Aspect.AIR,1).add(Aspect.FIRE,1).add(Aspect.WATER,1).add(Aspect.EARTH,1).add(Aspect.ORDER,1).add(Aspect.ENTROPY,1);
         addShapedArcaneRecipe("FIRSTSTEPS.1","FIRSTSTEPS@2", new ItemStack(ItemsTC.thaumometer), 0, crystals, " G ","GPG"," G ", 'G',"ingotGold", 'P', Blocks.GLASS_PANE);
 
+        crystals = new AspectList().add(Aspect.AIR,1).add(Aspect.FIRE,1).add(Aspect.WATER,1).add(Aspect.EARTH,1).add(Aspect.ORDER,1).add(Aspect.ENTROPY,1);
+        addShapedArcaneRecipe("PRIMALCHARM.1","PRIMALCHARM@1", new ItemStack(TW_Items.itemPrimalCharm), 20, crystals, "AFW","BRB","EOP", 'A', ThaumcraftApiHelper.makeCrystal(Aspect.AIR), 'F', ThaumcraftApiHelper.makeCrystal(Aspect.FIRE), 'W', ThaumcraftApiHelper.makeCrystal(Aspect.WATER),'B',"ingotBrass", 'R', new ItemStack(ItemsTC.visResonator), 'E', ThaumcraftApiHelper.makeCrystal(Aspect.EARTH), 'O', ThaumcraftApiHelper.makeCrystal(Aspect.ORDER), 'P', ThaumcraftApiHelper.makeCrystal(Aspect.ENTROPY));
+
         crystals = new AspectList().add(Aspect.AIR,2).add(Aspect.FIRE,2).add(Aspect.ORDER,2);
         addShapedArcaneRecipe("CAP_COPPER.1","CAP_COPPER@1", new ItemStack(TW_Items.itemWandCap, 1, 1), 10, crystals, "NNN","N N",'N',"nuggetCopper");
 

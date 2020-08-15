@@ -16,6 +16,7 @@ public class TW_Items {
 	public static final Item itemWand = new ItemWand("item_wand");
 	public static final Item itemWandCap = new ItemBaseMeta("item_wand_cap","iron","copper","brass","silver_inert","silver","thaumium_inert","thaumium","void_inert","void");
 	public static final Item itemWandRod = new ItemBaseMeta("item_wand_rod","greatwood","reed","blaze","ice","obsidian","quartz","bone","silverwood");
+	public static final Item itemPrimalCharm = new ItemPrimalCharm("item_primal_charm");
 
 	public static void registerItems(Register<Item> r) {
 		for(Item item : ITEMS)

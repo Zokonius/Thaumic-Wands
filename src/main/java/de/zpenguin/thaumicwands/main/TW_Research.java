@@ -106,6 +106,21 @@ public class TW_Research {
         parents = new String[] {"UNLOCKTHAUMATURGY"};
         ResearchHelper.makeThaumaturgyResearch("BASETHAUMATURGY", "Basic Thaumaturgy", 0, 0, iconThaumaturgy, stages, parents, addenda, ROUND, HIDDEN);
 
+        // Primal Charm
+        stages = new ResearchStage[] {
+            new ResearchHelper.RSB()
+                .setText("research.PRIMALCHARM.stage.0")
+                .setKnow(new Knowledge(OBSERVATION, catThaumaturgy, 1), new Knowledge(OBSERVATION, getCategory("BASICS"), 1))
+                .build(),
+            new ResearchHelper.RSB()
+            	.setText("research.PRIMALCHARM.stage.1")
+                .setRecipes(TW_Recipes.recipes.get("PRIMALCHARM.1"))
+                .build()
+        };
+        parents = new String[] {"BASETHAUMATURGY", "UNLOCKAUROMANCY@2","METALLURGY@2"};
+        ResearchHelper.makeThaumaturgyResearch("PRIMALCHARM", "Primal Charm", 0, -2, new ItemStack(TW_Items.itemPrimalCharm), stages, parents);
+
+
         // Copper Caps
         stages = new ResearchStage[] {
             new ResearchHelper.RSB()

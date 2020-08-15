@@ -1,5 +1,7 @@
 # --- Items ---
 
+item_primal_charm.name=Primal Charm
+
 #Wand Rods
 item_wand_rod_greatwood.name=Greatwood Rod
 item_wand_rod_reed.name=Reed Rod
@@ -96,6 +98,10 @@ research.UNLOCKTHAUMATURGY.stage.1=Even though I can not rely on using vis for c
 # Base Thaumaturgy
 research.BASETHAUMATURGY.stage.0=Now that I have my Wand I can begin assembling arcane devices, but I doubt that this Wand will be enough maybe I should begin looking at other Materials.
 research.BASETHAUMATURGY.addendum.0=I realized that those foci I made do not only fit a top of the Casters Gaunlet, but also dircetly at the tip of my wand. Interstingly the foci started to drain the vis and not from the surrounding aura but from my wand, this might be come in handy.
+
+# Primal Charm
+research.PRIMALCHARM.stage.0=While I was unable to charge my wand from the aura around me, I found small orbs of vis allowing me to charge it nonetheless, however it should be possible to construct a device that is able to drain atleast a little of the surrounding aura to charge my wand.
+research.PRIMALCHARM.stage.1=I came up with a small device that is basically an augmented vis resonator, creating a vis-feedback-loop from the oscillations of included vis crystals, turning aura into concentrated vis orbs, to be collected using a wand.  
 
 # Copper Caps
 research.CAP_COPPER.stage.0=Those Engineers use this metal to build their silly machines and conduct something they call flux (these fools have no idea what they are talking about), hopefully it is able to conduct vis aswell.

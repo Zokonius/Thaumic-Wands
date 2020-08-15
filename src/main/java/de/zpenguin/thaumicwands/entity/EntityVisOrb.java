@@ -37,6 +37,8 @@ public class EntityVisOrb extends Entity {
 		this.motionY = ((float) (Math.random() * 0.2D) * 2.0F);
 		this.motionZ = ((float) (Math.random() * 0.2D - 0.1D) * 2.0F);
 		this.visAmount = amount;
+
+		System.out.println(this);
 	}
 
 	public EntityVisOrb(World world) {
@@ -117,7 +119,6 @@ public class EntityVisOrb extends Entity {
 
 	@Override
 	protected void entityInit() {
-		// TODO Auto-generated method stub
 
 	}
 

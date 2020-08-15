@@ -49,7 +49,8 @@ public class EntityVisOrbRenderer extends Render<EntityVisOrb> {
 	    GL11.glScalef(f11, f11, f11);
 		BufferBuilder vb = tes.getBuffer();
 
-		Color c = new Color(Color.HSBtoRGB(partialTicks * 10 % 360 / 360F, 0.4F, 0.9F));
+		Color c = new Color(Color.HSBtoRGB(orb.world.getTotalWorldTime() /360F, 0.7F, 0.7F));
+		GL11.glColor3f(c.getRed()/255F, c.getGreen()/255F, c.getBlue()/255F);
     	vb.begin(GL11.GL_QUADS, DefaultVertexFormats.POSITION_TEX);
 	    vb.normal(0.0F, 1.0F, 0.0F);
 		vb.color(c.getRed(), c.getGreen(), c.getBlue(), 0);

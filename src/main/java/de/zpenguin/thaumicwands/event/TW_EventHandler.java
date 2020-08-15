@@ -16,7 +16,7 @@ public class TW_EventHandler {
 		if(!e.getEntityLiving().world.isRemote) {
 			AspectList aspects = AspectHelper.getEntityAspects(e.getEntityLiving());
 				if(aspects !=null && aspects.visSize() > 0 && e.getEntityLiving().getEntityWorld().rand.nextBoolean()) {
-					EntityVisOrb orb = new EntityVisOrb(e.getEntityLiving().getEntityWorld(), e.getEntityLiving().posX, e.getEntityLiving().posY, e.getEntityLiving().posZ, e.getEntityLiving().getEntityWorld().rand.nextInt((int)Math.floor(1+(aspects.visSize()/20))));
+					EntityVisOrb orb = new EntityVisOrb(e.getEntityLiving().getEntityWorld(), e.getEntityLiving().posX, e.getEntityLiving().posY, e.getEntityLiving().posZ, 1 + e.getEntityLiving().world.rand.nextInt(1 + Math.floorDiv(aspects.visSize(), 20)));
 					e.getEntityLiving().getEntityWorld().spawnEntity(orb);
 				}
 
