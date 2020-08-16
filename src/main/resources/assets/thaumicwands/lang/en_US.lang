@@ -1,6 +1,6 @@
 # --- Items ---
 
-item_primal_charm.name=Primal Charm
+item.item_primal_charm.name=Primal Charm
 
 #Wand Rods
 item_wand_rod_greatwood.name=Greatwood Rod
