@@ -32,15 +32,18 @@ public class WandWrapper {
 	}
 
 	public int getVisCost() {
-		return rod.getCraftCost() * cap.getCraftCost();
+		return isValidWand() ?  rod.getCraftCost() * cap.getCraftCost() : 0;
 	}
 
 	public AspectList getCrystals() {
 		AspectList aspects = new AspectList();
-		int cost = Math.max(rod.getCraftCost(), cap.getCraftCost());
 
-		for(Aspect a: Aspect.getPrimalAspects())
-			aspects.add(a,cost);
+		if(isValidWand()) {
+			int cost = Math.max(rod.getCraftCost(), cap.getCraftCost());
+			for(Aspect a: Aspect.getPrimalAspects())
+				aspects.add(a,cost);
+		}
+
 		return aspects;
 
 	}
