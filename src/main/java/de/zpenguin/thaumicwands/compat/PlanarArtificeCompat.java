@@ -60,7 +60,7 @@ public class PlanarArtificeCompat implements ICompat {
             .build()
         };
         parents = new String[] {"CAP_BRASS", "ALKIMIUM"};
-        ResearchHelper.makeResearch("CAP_ALKIMIUM", "THAUMATURGY", "Alkimium Wand Caps", -5, -1, new ItemStack(itemWandCapPA), stages, parents);
+        ResearchHelper.makeResearch("CAP_ALKIMIUM", "THAUMATURGY", -5, -1, new ItemStack(itemWandCapPA), stages, parents);
 	}
 
 }
