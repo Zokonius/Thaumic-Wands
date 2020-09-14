@@ -46,6 +46,8 @@ public class TW_Research {
 																.add(Aspect.ENERGY, 10);
 
 
+
+
 	@SubscribeEvent
 	public static void commandEvent(CommandEvent ce) {
 		if(ce.getCommand() instanceof CommandThaumcraft && ce.getParameters().length > 0 && ce.getParameters()[0].equalsIgnoreCase("reload")){
@@ -183,7 +185,7 @@ public class TW_Research {
         stages = new ResearchStage[] {
             new ResearchHelper.RSB()
 				.setText("research.CAP_VOID.stage.0")
-				.setKnow(new Knowledge(THEORY, catThaumaturgy, 2), new Knowledge(THEORY, getCategory("INFUSION"), 1), new Knowledge(THEORY, getCategory("ELDRICH"), 1))
+				.setKnow(new Knowledge(THEORY, catThaumaturgy, 2), new Knowledge(THEORY, getCategory("INFUSION"), 1), new Knowledge(THEORY, getCategory("ELDRITCH"), 1))
                 .build(),
             new ResearchHelper.RSB()
 			.setText("research.CAP_VOID.stage.1")
@@ -213,7 +215,7 @@ public class TW_Research {
             new ResearchHelper.RSB()
 				.setText("research.ROD_REED.stage.0")
                 .setKnow(new Knowledge(THEORY, catThaumaturgy, 1), new Knowledge(THEORY, getCategory("INFUSION"), 1), new Knowledge(OBSERVATION, catThaumaturgy, 2))
-                .setConsumedItems(new ItemStack(Blocks.REEDS))
+                .setConsumedItems(new ItemStack(Items.REEDS))
                 .build(),
             new ResearchHelper.RSB()
 				.setText("research.ROD_REED.stage.1")
