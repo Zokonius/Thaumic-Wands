@@ -33,7 +33,7 @@ public class TransformerArcaneWorkbench implements Opcodes {
 
 	public static byte[] transformGui(byte[] origCode) {
 
-		WandTransformer.logger.log(Level.INFO, "[CORE] Patching Arcane Workbench");
+		ThaumicWands.logger.log(Level.INFO, "[CORE] Patching Arcane Workbench");
 
 		final String methodToPatch = WandTransformer.isDeobfEnvironment ? "onBlockActivated": "func_180639_a";
 		final String desc = "(Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/player/EntityPlayer;)Z";

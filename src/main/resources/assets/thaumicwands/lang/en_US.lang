@@ -35,6 +35,7 @@ item_wand_cap_ta_mithminite.name=Charged Mithminite Cap
 item_wand_cap_tb_thauminite.name=Thauminite Cap
 
 item_wand_cap_pa_alkimium.name=Alkimium Cap
+item_wand_cap_pa_bismuth.name=Bismuth Cap
 
 # this is what is used to name the wand - the position of the variables can be altered so it makes more sense in other languages
 item.wand.name=%CAP %ROD %OBJ
@@ -68,6 +69,8 @@ item.wand.mithminite.cap=Mithminite Ornamented
 item.wand.thauminite.cap=Thauminite Bossed
 
 item.wand.alkimium.cap=Alkimium Crowned
+item.wand.bismuth.cap=Bismuth Attuned
+
 
 #
 
@@ -206,3 +209,8 @@ research.CAP_THAUMINITE.stage.1=Well, that was easier than I expected, it didn't
 research.CAP_ALKIMIUM.title=Alkimium Wand Caps
 research.CAP_ALKIMIUM.stage.0=Ever since I discovered this Alkimium I replaced a lot of brass with it, so maybe it is on time that replace my brass caps with it aswell.
 research.CAP_ALKIMIUM.stage.1=I was not exacly hopeful, when I thought of this, since alkimium is just a brass derivative, but I did not exspect it to resonate it with so many aspects. <br> While a 5% reduction seems like not that much, alkimium offers a single crystal discount for §3AQUA§r,§2TERRA§r and §7ORDO§r, which is quite something.  
+
+#Bismuth Caps
+research.CAP_BISMUTH.title=Bismuth Wand Caps
+research.CAP_BISMUTH.stage.0=Bismuth shows a huge reactivity to aura, so turning it into a new pair of Wand Caps probably is not te worst idea, what is Thaumaturgy but a specialized from of Auromancy.
+research.CAP_BISMUTH.stage.1=As I exspected Bismuth is a marvelous conductor of vis, granting a 15% discount on all crafts performed with it, even though it is very colorful it does not react to any elemtals what so ever, but to §7ORDO§r and §8PERDITIO§r, which is probably a connection to the ordered vis and the entropic flux. I could have exspected that.
