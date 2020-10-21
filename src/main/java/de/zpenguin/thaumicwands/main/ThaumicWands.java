@@ -1,5 +1,8 @@
 package de.zpenguin.thaumicwands.main;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -14,8 +17,10 @@ public class ThaumicWands {
 
 	public static final String modID = "thaumicwands";
 	public static final String modName = "Thaumic Wands";
-	public static final String version = "1.2.4";
+	public static final String version = "1.2.6";
 	public static final String dependencies = "required-after:thaumcraft;";
+	
+	public static final Logger logger = LogManager.getLogger("Thaumic Wands");
 
 	@Instance
 	public static ThaumicWands instance;

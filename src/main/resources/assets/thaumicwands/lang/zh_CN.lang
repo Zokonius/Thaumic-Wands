@@ -36,6 +36,10 @@ item_wand_cap_tb_thauminite.name=秘晶杖端
 
 item_wand_cap_pa_alkimium.name=炼化杖端
 
+item_wand_cap_tb_thauminite.name=秘晶杖端
+
+item_wand_cap_pa_alkimium.name=炼化杖端
+
 # this is what is used to name the wand - the position of the variables can be altered so it makes more sense in other languages
 item.wand.name=%CAP%ROD%OBJ
 #

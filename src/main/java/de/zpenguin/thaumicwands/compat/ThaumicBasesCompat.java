@@ -54,7 +54,7 @@ public class ThaumicBasesCompat implements ICompat {
             .build()
         };
         parents = new String[] {"CAP_THAUMIUM", "TB.ALCHEMY"};
-        ResearchHelper.makeResearch("CAP_THAUMINITE", "THAUMATURGY", "Thauminite Wand Caps", -1, -7, new ItemStack(itemWandCapTB), stages, parents);
+        ResearchHelper.makeResearch("CAP_THAUMINITE", "THAUMATURGY", -1, -7, new ItemStack(itemWandCapTB), stages, parents);
 
 
 	}

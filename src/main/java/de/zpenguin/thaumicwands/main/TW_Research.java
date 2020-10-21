@@ -46,6 +46,8 @@ public class TW_Research {
 																.add(Aspect.ENERGY, 10);
 
 
+
+
 	@SubscribeEvent
 	public static void commandEvent(CommandEvent ce) {
 		if(ce.getCommand() instanceof CommandThaumcraft && ce.getParameters().length > 0 && ce.getParameters()[0].equalsIgnoreCase("reload")){
@@ -86,7 +88,7 @@ public class TW_Research {
                 .build()
         };
         parents = new String[] {"FIRSTSTEPS"};
-        ResearchHelper.makeResearch("UNLOCKTHAUMATURGY", "BASICS", "Discovering Thaumaturgy", -2, 1, iconThaumaturgy, stages, parents, ROUND, SPIKY);
+        ResearchHelper.makeResearch("UNLOCKTHAUMATURGY", "BASICS", -2, 1, iconThaumaturgy, stages, parents, ROUND, SPIKY);
 
         // Basic Thaumaturgy
         stages = new ResearchStage[] {
@@ -104,7 +106,7 @@ public class TW_Research {
         };
 
         parents = new String[] {"UNLOCKTHAUMATURGY"};
-        ResearchHelper.makeThaumaturgyResearch("BASETHAUMATURGY", "Basic Thaumaturgy", 0, 0, iconThaumaturgy, stages, parents, addenda, ROUND, HIDDEN);
+        ResearchHelper.makeThaumaturgyResearch("BASETHAUMATURGY", 0, 0, iconThaumaturgy, stages, parents, addenda, ROUND, HIDDEN);
 
         // Primal Charm
         stages = new ResearchStage[] {
@@ -118,7 +120,7 @@ public class TW_Research {
                 .build()
         };
         parents = new String[] {"BASETHAUMATURGY", "UNLOCKAUROMANCY@2","METALLURGY@2"};
-        ResearchHelper.makeThaumaturgyResearch("PRIMALCHARM", "Primal Charm", 0, -2, new ItemStack(TW_Items.itemPrimalCharm), stages, parents);
+        ResearchHelper.makeThaumaturgyResearch("PRIMALCHARM", 0, -2, new ItemStack(TW_Items.itemPrimalCharm), stages, parents);
 
 
         // Copper Caps
@@ -133,7 +135,7 @@ public class TW_Research {
                 .build()
         };
         parents = new String[] {"BASETHAUMATURGY"};
-        ResearchHelper.makeThaumaturgyResearch("CAP_COPPER", "Copper Wand Caps", -3, 0, new ItemStack(TW_Items.itemWandCap,1,1), stages, parents);
+        ResearchHelper.makeThaumaturgyResearch("CAP_COPPER", -3, 0, new ItemStack(TW_Items.itemWandCap,1,1), stages, parents);
 
         // Brass Caps
         stages = new ResearchStage[] {
@@ -148,7 +150,7 @@ public class TW_Research {
                 .build()
         };
         parents = new String[] {"BASETHAUMATURGY","METALLURGY@2"};
-        ResearchHelper.makeThaumaturgyResearch("CAP_BRASS", "Brass Wand Caps", -2, -2, new ItemStack(TW_Items.itemWandCap,1,2), stages, parents);
+        ResearchHelper.makeThaumaturgyResearch("CAP_BRASS", -2, -2, new ItemStack(TW_Items.itemWandCap,1,2), stages, parents);
 
         // Silver Caps
         stages = new ResearchStage[] {
@@ -162,7 +164,7 @@ public class TW_Research {
                 .build()
         };
         parents = new String[] {"CAP_BRASS","INFUSION"};
-        ResearchHelper.makeThaumaturgyResearch("CAP_SILVER", "Silver Wand Caps", -4, -3, new ItemStack(TW_Items.itemWandCap,1,4), stages, parents);
+        ResearchHelper.makeThaumaturgyResearch("CAP_SILVER", -4, -3, new ItemStack(TW_Items.itemWandCap,1,4), stages, parents);
 
         // Thaumium Caps
         stages = new ResearchStage[] {
@@ -177,13 +179,13 @@ public class TW_Research {
                 .build()
         };
         parents = new String[] {"CAP_BRASS","METALLURGY@3","INFUSION"};
-        ResearchHelper.makeThaumaturgyResearch("CAP_THAUMIUM", "Thaumium Wand Caps", -2, -5, new ItemStack(TW_Items.itemWandCap,1,6), stages, parents);
+        ResearchHelper.makeThaumaturgyResearch("CAP_THAUMIUM", -2, -5, new ItemStack(TW_Items.itemWandCap,1,6), stages, parents);
 
         // Void Caps
         stages = new ResearchStage[] {
             new ResearchHelper.RSB()
 				.setText("research.CAP_VOID.stage.0")
-				.setKnow(new Knowledge(THEORY, catThaumaturgy, 2), new Knowledge(THEORY, getCategory("INFUSION"), 1), new Knowledge(THEORY, getCategory("ELDRICH"), 1))
+				.setKnow(new Knowledge(THEORY, catThaumaturgy, 2), new Knowledge(THEORY, getCategory("INFUSION"), 1), new Knowledge(THEORY, getCategory("ELDRITCH"), 1))
                 .build(),
             new ResearchHelper.RSB()
 			.setText("research.CAP_VOID.stage.1")
@@ -192,7 +194,7 @@ public class TW_Research {
                 .build()
         };
         parents = new String[] {"CAP_THAUMIUM","BASEELDRITCH@2","INFUSION"};
-        ResearchHelper.makeThaumaturgyResearch("CAP_VOID", "Void Wand Caps", -4, -6, new ItemStack(TW_Items.itemWandCap,1,8), stages, parents);
+        ResearchHelper.makeThaumaturgyResearch("CAP_VOID", -4, -6, new ItemStack(TW_Items.itemWandCap,1,8), stages, parents);
 
         // Greatwood Rod
         stages = new ResearchStage[] {
@@ -206,14 +208,14 @@ public class TW_Research {
                 .build()
         };
         parents = new String[] {"BASETHAUMATURGY","!PLANTWOOD"};
-        ResearchHelper.makeThaumaturgyResearch("ROD_GREATWOOD", "Greatwood Wand Rod", 1, 2, new ItemStack(TW_Items.itemWandRod,1,0), stages, parents);
+        ResearchHelper.makeThaumaturgyResearch("ROD_GREATWOOD", 1, 2, new ItemStack(TW_Items.itemWandRod,1,0), stages, parents);
 
         // Reed Rod
         stages = new ResearchStage[] {
             new ResearchHelper.RSB()
 				.setText("research.ROD_REED.stage.0")
                 .setKnow(new Knowledge(THEORY, catThaumaturgy, 1), new Knowledge(THEORY, getCategory("INFUSION"), 1), new Knowledge(OBSERVATION, catThaumaturgy, 2))
-                .setConsumedItems(new ItemStack(Blocks.REEDS))
+                .setConsumedItems(new ItemStack(Items.REEDS))
                 .build(),
             new ResearchHelper.RSB()
 				.setText("research.ROD_REED.stage.1")
@@ -221,7 +223,7 @@ public class TW_Research {
                 .build()
         };
         parents = new String[] {"ROD_GREATWOOD","INFUSION"};
-        ResearchHelper.makeThaumaturgyResearch("ROD_REED", "Reed Wand Rod", 3, 1, new ItemStack(TW_Items.itemWandRod,1,1), stages, parents);
+        ResearchHelper.makeThaumaturgyResearch("ROD_REED", 3, 1, new ItemStack(TW_Items.itemWandRod,1,1), stages, parents);
 
 
         // Blaze Rod
@@ -237,7 +239,7 @@ public class TW_Research {
                 .build()
         };
         parents = new String[] {"ROD_GREATWOOD","INFUSION"};
-        ResearchHelper.makeThaumaturgyResearch("ROD_BLAZE", "Blaze Wand Rod", 4, 1, new ItemStack(TW_Items.itemWandRod,1,2), stages, parents);
+        ResearchHelper.makeThaumaturgyResearch("ROD_BLAZE", 4, 1, new ItemStack(TW_Items.itemWandRod,1,2), stages, parents);
 
 
         // Ice Rod
@@ -253,7 +255,7 @@ public class TW_Research {
                 .build()
         };
         parents = new String[] {"ROD_GREATWOOD","INFUSION"};
-        ResearchHelper.makeThaumaturgyResearch("ROD_ICE", "Ice Wand Rod", 5, 1, new ItemStack(TW_Items.itemWandRod,1,3), stages, parents);
+        ResearchHelper.makeThaumaturgyResearch("ROD_ICE", 5, 1, new ItemStack(TW_Items.itemWandRod,1,3), stages, parents);
 
         // Obsidian Rod
         stages = new ResearchStage[] {
@@ -268,7 +270,7 @@ public class TW_Research {
                 .build()
         };
         parents = new String[] {"ROD_GREATWOOD","INFUSION"};
-        ResearchHelper.makeThaumaturgyResearch("ROD_OBSIDIAN", "Obsidian Wand Rod", 3, 3, new ItemStack(TW_Items.itemWandRod,1,4), stages, parents);
+        ResearchHelper.makeThaumaturgyResearch("ROD_OBSIDIAN", 3, 3, new ItemStack(TW_Items.itemWandRod,1,4), stages, parents);
 
         // Quartz Rod
         stages = new ResearchStage[] {
@@ -283,7 +285,7 @@ public class TW_Research {
                 .build()
         };
         parents = new String[] {"ROD_GREATWOOD","INFUSION"};
-        ResearchHelper.makeThaumaturgyResearch("ROD_QUARTZ", "Quartz Wand Rod", 4, 3, new ItemStack(TW_Items.itemWandRod,1,5), stages, parents);
+        ResearchHelper.makeThaumaturgyResearch("ROD_QUARTZ", 4, 3, new ItemStack(TW_Items.itemWandRod,1,5), stages, parents);
 
         // Bone Rod
         stages = new ResearchStage[] {
@@ -299,7 +301,7 @@ public class TW_Research {
                 .build()
         };
         parents = new String[] {"ROD_GREATWOOD","INFUSION"};
-        ResearchHelper.makeThaumaturgyResearch("ROD_BONE", "Bone Wand Rod", 5, 3, new ItemStack(TW_Items.itemWandRod,1,6), stages, parents);
+        ResearchHelper.makeThaumaturgyResearch("ROD_BONE", 5, 3, new ItemStack(TW_Items.itemWandRod,1,6), stages, parents);
 
         // Silverwood Rod
         stages = new ResearchStage[] {
@@ -313,7 +315,7 @@ public class TW_Research {
                 .build()
         };
         parents = new String[] {"ROD_GREATWOOD","INFUSION"};
-        ResearchHelper.makeThaumaturgyResearch("ROD_SILVERWOOD", "Silverwood Wand Rod", 7, 5, new ItemStack(TW_Items.itemWandRod,1,7), stages, parents);
+        ResearchHelper.makeThaumaturgyResearch("ROD_SILVERWOOD", 7, 5, new ItemStack(TW_Items.itemWandRod,1,7), stages, parents);
 
         TW_Compat.initResearch();
 

@@ -96,7 +96,7 @@ public class ThaumicAdditionsCompat implements ICompat {
             .build()
         };
         parents = new String[] {"~CAP_VOID", "TAR_MITHRILLIUM"};
-        ResearchHelper.makeResearch("CAP_MITHRILLIUM", "THAUMATURGY", "Mithrillium Wand Caps", 2, -5, new ItemStack(itemWandCap,1,1), stages, parents, HIDDEN);
+        ResearchHelper.makeResearch("CAP_MITHRILLIUM", "THAUMATURGY", 2, -5, new ItemStack(itemWandCap,1,1), stages, parents, HIDDEN);
 
 
         // Adaminite Caps
@@ -112,7 +112,7 @@ public class ThaumicAdditionsCompat implements ICompat {
             	.build()
         };
         parents = new String[] {"CAP_MITHRILLIUM", "TAR_ADAMINITE"};
-        ResearchHelper.makeResearch("CAP_ADAMINITE", "THAUMATURGY", "Adaminite Wand Caps", 4, -5, new ItemStack(itemWandCap,1,3), stages, parents, HIDDEN);
+        ResearchHelper.makeResearch("CAP_ADAMINITE", "THAUMATURGY", 4, -5, new ItemStack(itemWandCap,1,3), stages, parents, HIDDEN);
 
 
         // Mithminite Caps
@@ -128,7 +128,7 @@ public class ThaumicAdditionsCompat implements ICompat {
             	.build()
         };
         parents = new String[] {"CAP_ADAMINITE", "TAR_MITHMINITE"};
-        ResearchHelper.makeResearch("CAP_MITHMINITE", "THAUMATURGY", "Mithminite Wand Caps", 6, -5, new ItemStack(itemWandCap,1,5), stages, parents, HIDDEN);
+        ResearchHelper.makeResearch("CAP_MITHMINITE", "THAUMATURGY", 6, -5, new ItemStack(itemWandCap,1,5), stages, parents, HIDDEN);
 
 
         // Adaminitewood Rod
@@ -144,7 +144,7 @@ public class ThaumicAdditionsCompat implements ICompat {
             .build()
         };
         parents = new String[] {"~ROD_SILVERWOOD","TAR_ADAMINITE_FABRIC"};
-        ResearchHelper.makeResearch("ROD_ADAMINITEWOOD", "THAUMATURGY", "Adaminitewood Wand Rod", 4, -4, new ItemStack(itemWandRod,1,0), stages, parents, HIDDEN);
+        ResearchHelper.makeResearch("ROD_ADAMINITEWOOD", "THAUMATURGY", 4, -4, new ItemStack(itemWandRod,1,0), stages, parents, HIDDEN);
 
 	}
 
