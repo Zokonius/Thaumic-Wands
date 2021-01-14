@@ -13,13 +13,13 @@ import net.minecraft.item.ItemStack;
 public class ItemWandRenderer extends TileEntityItemStackRenderer {
 
 	public static TransformType transform = GUI;
+	
+	private final ModelWand modelWand = new ModelWand();
 
 	@Override
 	public void renderByItem(ItemStack stack) {
 		if(stack == null || !(stack.getItem() instanceof ItemWand))
 			return;
-
-		final ModelWand modelWand = new ModelWand();
 
 		GlStateManager.pushMatrix();
 
