@@ -12,7 +12,7 @@ item_wand_rod_quartz.name=Quartz Rod
 item_wand_rod_bone.name=Bone Rod
 item_wand_rod_silverwood.name=Silverwood Rod
 
-item_wand_rod_ta_adaminitewood.name=Adamintewood Rod 
+item_wand_rod_ta_adaminitewood.name=Adaminitewood Rod 
 
 #Wand Caps
 item_wand_cap_iron.name=Iron Cap
@@ -53,7 +53,7 @@ item.wand.ice.rod=Icy
 item.wand.bone.rod=Bone
 item.wand.reed.rod=Reed
 item.wand.quartz.rod=Quartz
-item.wand.adaminitewood.rod=Adamintewood
+item.wand.adaminitewood.rod=Adaminitewood
 
 item.wand.iron.cap=Iron Capped
 item.wand.brass.cap=Brass Banded
@@ -187,7 +187,7 @@ research.CAP_ADAMINITE.stage.0=When Mithrillium is already great, then what abou
 research.CAP_ADAMINITE.stage.1=It turns out I was right, these caps truely are marvelous, they provide a 30% disount and even a doubled primal discount, maybe I should stop now, or maybe I should go even further.
 
 #Adamintewood Rod
-research.ROD_ADAMINITEWOOD.title=Adamintewood Wand Rod
+research.ROD_ADAMINITEWOOD.title=Adaminitewood Wand Rod
 research.ROD_ADAMINITEWOOD.stage.0=I've got a problem, it looks like I can not proceed any further unless I find myself an alternative to this silverwood rod, I was a fool thinking 800 vis is enough, I should have started sooner to create a bigger vis storage, but now seems like a good time to start.
 research.ROD_ADAMINITEWOOD.stage.1=By infusing a mundane silverwood rod with a lot of adaminite, I was able to make a vessel strong enough to quadruple the vis capacity of the silverwood rod, I know I could have gone further, but I feel uncomfortable dirctly touching such a huge amount of vis with my bare hands, especialy when such a big part of it conducts vis like nothing else in the universe.
 
