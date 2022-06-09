@@ -62,6 +62,7 @@ public class EntityVisOrbRenderer extends Render<EntityVisOrb> {
 	    tes.draw();
 	    GlStateManager.disableBlend();
 	    GL11.glDisable(32826);
+		GlStateManager.resetColor();
 	    GlStateManager.popMatrix();
 	}
 
