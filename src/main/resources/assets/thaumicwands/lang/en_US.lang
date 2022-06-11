@@ -146,8 +146,8 @@ research.ROD_REED.stage.1=Sugarcane is a lightweight material and reacts well to
 
 # Blaze Rod
 research.ROD_BLAZE.title=Blaze Wand Rod
-research.ROD_REED.stage.0=Sugarcane is a lightweight material and reacts well to Aer essentia.  What if I were to shape it into a wand?
-research.ROD_REED.stage.1=Sugarcane is a lightweight material and reacts well to Aer essentia.  As I infuse the wand with vis, it takes hold and is capable of storing a whopping 600 vis.  Additionally, this wand seems to react positively to high altitudes.  Perhaps I should try casting something from a mountain top?
+research.ROD_BLAZE.stage.0=Blaze rods already have a convenient shape and reacts well to Ignis essentia.  Perhaps I should investigate its usefulness as a wand?
+research.ROD_BLAZE.stage.1=Blaze rods already have a convenient shape and react well to Ignis essentia.  This wonderous material holds an impressive 600 vis. In addition, it reacts well to heat sources.  Perhaps I should try casting spells in a desert?
 
 # Ice Rod
 research.ROD_ICE.title=Ice Wand Rod
@@ -208,7 +208,7 @@ research.CAP_THAUMINITE.stage.1=Well, that was easier than I expected, it didn't
 #Alkimium Caps
 research.CAP_ALKIMIUM.title=Alkimium Wand Caps
 research.CAP_ALKIMIUM.stage.0=Ever since I discovered this Alkimium I replaced a lot of brass with it, so maybe it is on time that replace my brass caps with it aswell.
-research.CAP_ALKIMIUM.stage.1=I was not exacly hopeful, when I thought of this, since alkimium is just a brass derivative, but I did not exspect it to resonate it with so many aspects. <br> While a 5% reduction seems like not that much, alkimium offers a single crystal discount for §3AQUA§r,§2TERRA§r and §7ORDO§r, which is quite something.  
+research.CAP_ALKIMIUM.stage.1=I was not exacly hopeful, when I thought of this, since alkimium is just a brass derivative, but I did not exspect it to resonate it with so many aspects.<br>While a 5% reduction seems like not that much, alkimium offers a single crystal discount for §3AQUA§r,§2TERRA§r and §7ORDO§r, which is quite something.  
 
 #Bismuth Caps
 research.CAP_BISMUTH.title=Bismuth Wand Caps
