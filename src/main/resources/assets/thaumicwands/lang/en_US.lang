@@ -97,12 +97,12 @@ card.conductance.text=You try to measure how vis behaves when moven though vario
 # Unlock Thaumaturgy
 research.UNLOCKTHAUMATURGY.title=Discovering Thaumaturgy
 research.UNLOCKTHAUMATURGY.stage.0=While creating a Thaumometer using the Arcane Workbench was relatively easy, it seems like crafting other devices requires, besides raw essentia crystals, requires vis as well. However, all my efforts to drain it from the aura directly were fruitless.  Perhaps I need some kind of channeling device.
-research.UNLOCKTHAUMATURGY.stage.1=Even without accees to the aura directly for creating my channeling device, I came up with a quite elegant solution to cast smaller quantities of vis. This rather crude wand is capable of storing 50 vis inside of it.  Now I just need to fill it with some vis.
+research.UNLOCKTHAUMATURGY.stage.1=Even without accees to the aura directly for creating my channeling device, I came up with a quite elegant solution to cast smaller quantities of vis. This rather crude wand is capable of storing 50 vis inside of it.  Now I just need to fill it with some vis.<BR>I saw some kind of orbs which drop from mobs I slay and they vanish away in seconds. Also they seem to be small remnants of pure vis. I'll keep the wand in hands just to be sure next time I slay a mob, I'll be able to quickly have those orbs inside my wand.
 
 # Base Thaumaturgy
 research.BASETHAUMATURGY.title=Basic Thaumaturgy
 research.BASETHAUMATURGY.stage.0=Now that I have my wand, I can begin assembling arcane devices.  However, I doubt that this wand will be enough.  Maybe I should begin looking at other materials?
-research.BASETHAUMATURGY.addendum.0=Well this was a surprise.  It seems that the foci I have designed not only socket into a Caster's Gauntlet, but into the tip of my wand as well.  In fact, instead of drawing from the aura, the focal spells now drain vis directly from the wand!  This may come in handy as I research both areas with low amounts of magic, and additional materials for my wands.
+research.BASETHAUMATURGY.addendum.0=Well this was a surprise.  It seems that the foci I have designed not only socket into a Caster's Gauntlet, but into the tip of my wand as well.  In fact, instead of drawing from the aura, the focal spells now drain vis directly from the wand!  This may come in handy as I research both areas with low amounts of magic, and additional materials for my wands.<BR>If I come with other materials later to create new wands, probably I will need some crystals avaliable in the Arcane Workbench in order to craft them. Those manuscripts mention that thaumaturges were able to create more powerful wands using some kind of vis shard, which don't appear to be that much different from vis crystals. They're also mentioned as elemental shards sometimes. So, I Think I'll need a minimum of each primal crystal to craft stronger wands. How much? Well, since each material have their own behavior with magic, I presume each one will require different quantities of crystals and I'll need to discover those by myself. This is a little bit of hard labor.
 
 # Primal Charm
 research.PRIMALCHARM.title=Primal Charm
@@ -112,7 +112,7 @@ research.PRIMALCHARM.stage.1=The pages of old describe a method of gathering vis
 # Copper Caps
 research.CAP_COPPER.title=Copper Wand Caps
 research.CAP_COPPER.stage.0=Copper is a strange metal.  While Engineers seem to be able to conduct some form of energy in their machinery with it, I believe I can do something greater with it.  It shold prove quite the interesting vis conductor as well.
-research.CAP_COPPER.stage.1=If only the Engineers knew what this metal was capable of...<BR> This metal, though not better at channeling vis than iron, has a even more interesting property regarding vis crystals. It seems that the vis emitted from this metal is somehow tinted with Ordo and Perditio, resulting in an affinity for vis crystals of these types.
+research.CAP_COPPER.stage.1=If only the Engineers knew what this metal was capable of...<BR>This metal, though not better at channeling vis than iron, has a even more interesting property regarding vis crystals. It seems that the vis emitted from this metal is somehow tinted with Ordo and Perditio, resulting in an affinity for vis crystals of these types.
 
 # Brass Caps
 research.CAP_BRASS.title=Brass Wand Caps
@@ -184,12 +184,12 @@ research.CAP_MITHRILLIUM.stage.1=It took a lot of salis mundus to get these to w
 #Adaminite Caps
 research.CAP_ADAMINITE.title=Adaminite Wand Caps
 research.CAP_ADAMINITE.stage.0=When Mithrillium is already great, then what about Adaminite it should be even better, it is only logical, but I have a feeling that not only the Warp will affect my sanity this time.
-research.CAP_ADAMINITE.stage.1=It turns out I was right, these caps truely are marvelous, they provide a 30% disount and even a doubled primal discount, maybe I should stop now, or maybe I should go even further.
+research.CAP_ADAMINITE.stage.1=It turns out I was right, these caps truely are marvelous, they provide a 30% discount and even a doubled primal discount, maybe I should stop now, or maybe I should go even further.
 
 #Adaminitewood Rod
 research.ROD_ADAMINITEWOOD.title=Adaminitewood Wand Rod
 research.ROD_ADAMINITEWOOD.stage.0=I've got a problem, it looks like I can not proceed any further unless I find myself an alternative to this silverwood rod, I was a fool thinking 800 vis is enough, I should have started sooner to create a bigger vis storage, but now seems like a good time to start.
-research.ROD_ADAMINITEWOOD.stage.1=By infusing a mundane silverwood rod with a lot of adaminite, I was able to make a vessel strong enough to quadruple the vis capacity of the silverwood rod, I know I could have gone further, but I feel uncomfortable dirctly touching such a huge amount of vis with my bare hands, especialy when such a big part of it conducts vis like nothing else in the universe.
+research.ROD_ADAMINITEWOOD.stage.1=By infusing a mundane silverwood rod with a lot of adaminite, I was able to make a vessel strong enough to quadruple the vis capacity of the silverwood rod, I know I could have gone further, but I feel uncomfortable directly touching such a huge amount of vis with my bare hands, especialy when such a big part of it conducts vis like nothing else in the universe.
 
 #Mithminite Caps
 research.CAP_MITHMINITE.title=Mithminite Wand Caps
@@ -208,7 +208,7 @@ research.CAP_THAUMINITE.stage.1=Well, that was easier than I expected, it didn't
 #Alkimium Caps
 research.CAP_ALKIMIUM.title=Alkimium Wand Caps
 research.CAP_ALKIMIUM.stage.0=Ever since I discovered this Alkimium I replaced a lot of brass with it, so maybe it is on time that replace my brass caps with it aswell.
-research.CAP_ALKIMIUM.stage.1=I was not exacly hopeful, when I thought of this, since alkimium is just a brass derivative, but I did not exspect it to resonate it with so many aspects.<br>While a 5% reduction seems like not that much, alkimium offers a single crystal discount for §3AQUA§r,§2TERRA§r and §7ORDO§r, which is quite something.  
+research.CAP_ALKIMIUM.stage.1=I was not exacly hopeful, when I thought of this, since alkimium is just a brass derivative, but I did not exspect it to resonate it with so many aspects.<BR>While a 5% reduction seems like not that much, alkimium offers a single crystal discount for §3AQUA§r,§2TERRA§r and §7ORDO§r, which is quite something.  
 
 #Bismuth Caps
 research.CAP_BISMUTH.title=Bismuth Wand Caps
