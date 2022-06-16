@@ -31,7 +31,7 @@ public class ThaumicBasesCompat implements ICompat {
         AspectList crystals;
 
         crystals = new AspectList().add(Aspect.AIR,6).add(Aspect.FIRE,6).add(Aspect.WATER,6).add(Aspect.EARTH,6).add(Aspect.ORDER,6).add(Aspect.ENTROPY,6);
-		TW_Recipes.addShapedArcaneRecipe("CAP_THAUMINITE.1", "CAP_THAUMINITE", new ItemStack(itemWandCapTB), 25, crystals, "nnn","nsn","sss", 'n', "nuggetThauminite", 's', ItemsTC.salisMundus);
+		TW_Recipes.addShapedArcaneRecipe("CAP_THAUMINITE.1", "CAP_THAUMINITE", new ItemStack(itemWandCapTB), 25, crystals, "nnn","nsn","sss", 'n', "nuggetthauminite", 's', ItemsTC.salisMundus);
 
 	}
 
