@@ -38,7 +38,7 @@ public class TW_Compat {
 	}
 
 	public static void loadComplete() {
-		for(ICompat c:compats)
+		for(ICompat c: compats)
 			c.loadComplete();
 	}
 
