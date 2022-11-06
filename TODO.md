@@ -2,6 +2,8 @@ Things to fix
 
 * Fix research types not showing their icons properly and not being recognized by the code. Thaumic Bases Unofficial and Thaumic Additions: Reconstructed researches are being affected aswell. Weirdly enough, if Thaumic Arcana is present, its curiosities have a chance to give you that points, but as a "different category" unnamed with no icon just setted as "Theory". But even so, that curios cannot be obtained besides cheating (yet);
 
+* Fix Wands don't casting any spells when you're aiming to any block;
+
 * Fix Thauminite Caps recipe's bug (Thauminite is a material added by Thaumic Bases Unofficial);
 
 * Make Thaumaturgy and Fundamentals tabs not bug when the command "/thaumcraft reload" is used;
