@@ -1,0 +1,113 @@
+{
+  "forge_marker": 1,
+  "variants": {
+      "greatwood": {
+      "model": "forge:item-layer", "transform": "forge:default-item",
+       "textures": {
+          "layer0": "thaumicwandsremastered:items/wand_rod_greatwood"
+        }
+      },
+        "reed": {
+         "model": "forge:item-layer", "transform": "forge:default-item",
+         "textures": {
+          "layer0": "thaumicwandsremastered:items/wand_rod_reed"
+        }
+      },
+        "blaze": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwandsremastered:items/wand_rod_blaze"
+        }
+      },
+        "ice": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwandsremastered:items/wand_rod_ice"
+        }
+      },
+        "obsidian": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwandsremastered:items/wand_rod_obsidian"
+        }
+      },
+        "quartz": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwandsremastered:items/wand_rod_quartz"
+        }
+      },
+      	"bone": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwandsremastered:items/wand_rod_bone"
+        }
+      },
+      	"silverwood": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwandsremastered:items/wand_rod_silverwood"
+        }
+      },
+    "infernal": {
+      "model": "forge:item-layer", "transform": "forge:default-item",
+      "textures": {
+        "layer0": "thaumicwandsremastered:items/wand_rod/item_wand_rod_infernal"
+      }
+    },
+    "chorus": {
+      "model": "forge:item-layer", "transform": "forge:default-item",
+      "textures": {
+        "layer0": "thaumicwandsremastered:items/wand_rod/item_wand_rod_chorus"
+      }
+    },
+    "livingwood_inert": {
+      "model": "forge:item-layer", "transform": "forge:default-item",
+      "textures": {
+        "layer0": "thaumicwandsremastered:items/wand_rod/item_wand_rod_livingwood_inert"
+      }
+    },
+    "livingwood": {
+      "model": "forge:item-layer", "transform": "forge:default-item",
+      "textures": {
+        "layer0": "thaumicwandsremastered:items/wand_rod/item_wand_rod_livingwood"
+      }
+    },
+    "dreamwood_inert": {
+      "model": "forge:item-layer", "transform": "forge:default-item",
+      "textures": {
+        "layer0": "thaumicwandsremastered:items/wand_rod/item_wand_rod_dreamwood_inert"
+      }
+    },
+    "dreamwood": {
+      "model": "forge:item-layer", "transform": "forge:default-item",
+      "textures": {
+        "layer0": "thaumicwandsremastered:items/wand_rod/item_wand_rod_dreamwood"
+      }
+    },
+    "archaic_inert": {
+      "model": "forge:item-layer", "transform": "forge:default-item",
+      "textures": {
+        "layer0": "thaumicwandsremastered:items/wand_rod/item_wand_rod_archaic_inert"
+      }
+    },
+    "archaic": {
+      "model": "forge:item-layer", "transform": "forge:default-item",
+      "textures": {
+        "layer0": "thaumicwandsremastered:items/wand_rod/item_wand_rod_archaic"
+      }
+    },
+    "blood_inert": {
+      "model": "forge:item-layer", "transform": "forge:default-item",
+      "textures": {
+        "layer0": "thaumicwandsremastered:items/wand_rod/item_wand_rod_blood_inert"
+      }
+    },
+    "blood": {
+      "model": "forge:item-layer", "transform": "forge:default-item",
+      "textures": {
+        "layer0": "thaumicwandsremastered:items/wand_rod/item_wand_rod_blood"
+      }
+    }
+  }
+}

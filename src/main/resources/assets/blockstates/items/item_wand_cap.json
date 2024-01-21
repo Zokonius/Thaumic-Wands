@@ -1,0 +1,108 @@
+{
+  "forge_marker": 1,
+  "variants": {
+
+  	"iron": {
+      	"model": "forge:item-layer", "transform": "forge:default-item",
+       	"textures": {
+          	"layer0": "thaumicwandsremastered:items/wand_cap_iron"
+    	}
+      },
+    "copper": {
+         "model": "forge:item-layer", "transform": "forge:default-item",
+         "textures": {
+          "layer0": "thaumicwandsremastered:items/wand_cap_copper"
+        }
+      },
+    "brass": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwandsremastered:items/wand_cap_brass"
+        }
+      },
+    "silver_inert": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwandsremastered:items/wand_cap_silver_inert"
+        }
+      },
+    "silver": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwandsremastered:items/wand_cap_silver"
+        }
+      },
+    "thaumium_inert": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwandsremastered:items/wand_cap_thaumium_inert"
+        }
+      },
+    "thaumium": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwandsremastered:items/wand_cap_thaumium"
+        }
+      },
+    "void_inert": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwandsremastered:items/wand_cap_void_inert"
+        }
+      },
+    "void": {
+        "model": "forge:item-layer", "transform": "forge:default-item",
+        "textures": {
+          "layer0": "thaumicwandsremastered:items/wand_cap_void"
+        }
+    },
+    "manasteel_inert": {
+      "model": "forge:item-layer", "transform": "forge:default-item",
+      "textures": {
+        "layer0": "thaumicwandsremastered:items/wand_cap/item_wand_cap_manasteel_inert"
+      }
+    },
+    "manasteel": {
+      "model": "forge:item-layer", "transform": "forge:default-item",
+      "textures": {
+        "layer0": "thaumicwandsremastered:items/wand_cap/item_wand_cap_manasteel"
+      }
+    },
+    "elementium_inert": {
+      "model": "forge:item-layer", "transform": "forge:default-item",
+      "textures": {
+        "layer0": "thaumicwandsremastered:items/wand_cap/item_wand_cap_elementium_inert"
+      }
+    },
+    "elementium": {
+      "model": "forge:item-layer", "transform": "forge:default-item",
+      "textures": {
+        "layer0": "thaumicwandsremastered:items/wand_cap/item_wand_cap_elementium"
+      }
+    },
+    "terrasteel": {
+      "model": "forge:item-layer", "transform": "forge:default-item",
+      "textures": {
+        "layer0": "thaumicwandsremastered:items/wand_cap/item_wand_cap_terrasteel"
+      }
+    },
+    "dawnstone_inert": {
+      "model": "forge:item-layer", "transform": "forge:default-item",
+      "textures": {
+        "layer0": "thaumicwandsremastered:items/wand_cap/item_wand_cap_dawnstone_inert"
+      }
+    },
+    "dawnstone": {
+      "model": "forge:item-layer", "transform": "forge:default-item",
+      "textures": {
+        "layer0": "thaumicwandsremastered:items/wand_cap/item_wand_cap_dawnstone"
+      }
+    },
+    "alchemical": {
+      "model": "forge:item-layer", "transform": "forge:default-item",
+      "textures": {
+        "layer0": "thaumicwandsremastered:items/wand_cap/item_wand_cap_alchemical"
+      }
+    }
+  }
+}

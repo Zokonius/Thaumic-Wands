@@ -1,13 +1,15 @@
 [
 {
-  "modid": "thaumicwands",
-  "name": "Thaumic Wands",
-  "description": "Brings back Wands to Thaumcraft",
-  "version": "1.2.6",
+  "modid": "thaumicwandsremastered",
+  "name": "Thaumic Wands Remastered",
+  "description": "Brings back Wands to Thaumcraft. Now Remastered!",
+  "version": "1.0",
   "mcversion": "1.12.2",
-  "authorList": ["Zoko061602"],
-  "credits": "Special thanks to Azanor for making Thaumcraft",
-  "parent": "",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["_InterPlay_"],
+  "credits": "The Forge and FML guys for making this possible, also Azanor for making Thaumcraft and finally Zoko061602 for making the original Thaumic Wands.",
+  "logoFile": "resources/logo.png",
   "screenshots": [],
   "dependencies": ["Thaumcraft"]
 }

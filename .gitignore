@@ -1,34 +1,25 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
 .classpath
 .project
-/.gradle
-/screenshots
-/.settings
-/bin
-*.dat
-/config
-/build
-/crash-reports
-/generated
-/saves
-/world
-/run
-*.log
-*.gz
-usercache.json
-usernamecache.json
-options.txt
-/eclipse
-/gradle
-/.idea
-*.launch
-banned-ips.json
-banned-players.json
-eula.txt
-ops.json
-server.properties
-whitelist.json
-asm/hammercore.xml
-mods/HammerLib-1.12.2-2.0.6.19.jar
-mods/ThaumicAdditions-1.12.2-12.4.3.jar
-CREDITS.txt
-README.txt
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+
+# Files from Forge MDK
+forge*changelog.txt
