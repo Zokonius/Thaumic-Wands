@@ -24,6 +24,7 @@ minecraft {
 	version = "${minecraft_main}.${minecraft_build}-${forge}"
     runDir = "run"
     mappings = mcp
+    useDepAts = true
 }
 
 jar {
