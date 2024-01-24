@@ -1,0 +1,216 @@
+# --- Items ---
+
+item.item_primal_charm.name=Cristal Primitivo
+
+#Wand Rods
+item_wand_rod_greatwood.name=Haste de Grande Carvalho
+item_wand_rod_reed.name=Haste de Cana
+item_wand_rod_blaze.name=Haste de Blaze
+item_wand_rod_ice.name=Haste de Gelo
+item_wand_rod_obsidian.name=Haste de Obsidiana
+item_wand_rod_quartz.name=Haste de Quartzo
+item_wand_rod_bone.name=Haste de Ossos
+item_wand_rod_silverwood.name=Haste de Madeira Prateada
+
+item_wand_rod_ta_adaminitewood.name=Haste de Madeira Adamantina
+
+#Wand Caps
+item_wand_cap_iron.name=Ponta de Ferro
+item_wand_cap_copper.name=Ponta de Cobre
+item_wand_cap_brass.name=Ponta de Latão
+item_wand_cap_silver_inert.name=Ponta Interte de Prata
+item_wand_cap_silver.name=Ponta de Prata Carregada
+item_wand_cap_thaumium_inert.name=Ponta Inerte de Táumio
+item_wand_cap_thaumium.name=Ponta de Táumio Carregada
+item_wand_cap_void_inert.name=Ponta Inerte de Metal do Void
+item_wand_cap_void.name=Ponta de Metal do Void Carregada
+
+item_wand_cap_ta_mithrillium_inert.name=Ponta Inerte de Mitrílio
+item_wand_cap_ta_mithrillium.name=Ponta de Mitrílio Carregada
+item_wand_cap_ta_adaminite_inert.name=Ponta Inerte de Madeira Adamantina
+item_wand_cap_ta_adaminite.name=Ponta de Madeira Adamantina Carregada
+item_wand_cap_ta_mithminite_inert.name=Ponta Inerte de Mithminita
+item_wand_cap_ta_mithminite.name=Ponta de Mithminita Caregada
+
+item_wand_cap_tb_thauminite.name=Ponta de Tauminita
+
+item_wand_cap_pa_alkimium.name=Ponta de Alquímio
+item_wand_cap_pa_bismuth.name=Ponta de Bismuto
+
+# this is what is used to name the wand - the position of the variables can be altered so it makes more sense in other languages
+item.wand.name=%OBJ %ROD %CAP
+#
+item.wand.wand.obj=Varinha
+item.wand.sceptre.obj=Cetro
+item.wand.staff.obj=Cajado
+
+item.wand.wood.rod=de Madeira
+item.wand.greatwood.rod=de Grande Carvalho
+item.wand.silverwood.rod=de Madeira Prateada
+item.wand.obsidian.rod=de Obsidiana
+item.wand.blaze.rod=Ardente
+item.wand.ice.rod=Congelante
+item.wand.bone.rod=de Osso
+item.wand.reed.rod=de Cana
+item.wand.quartz.rod=de Quartzo
+item.wand.adaminitewood.rod=de Madeira Adamantina
+
+item.wand.iron.cap=com Ponta de Ferro
+item.wand.brass.cap=com Ponta de Latão
+item.wand.copper.cap=com Ponta de Cobre
+item.wand.silver.cap=com Ponta Prateada
+item.wand.thaumium.cap=com Ponta de Táumio
+item.wand.void.cap=com Ponta de Metal do Vazio
+
+item.wand.mithrillium.cap=com Ponta de Mitrílio
+item.wand.adaminite.cap=com Adorno de Madeira Adamantina
+item.wand.mithminite.cap=com Ornamento de Mithminita
+
+item.wand.thauminite.cap=com Ponta de Tauminita
+
+item.wand.alkimium.cap=com Coroa de Alquímio
+item.wand.bismuth.cap=com Ponta de Bismuto
+
+
+#
+
+# --- Inventory ---
+tw.crystal.discount=Desconto de Cristais:
+#
+
+# --- Research ---
+tc.research_category.THAUMATURGY=Taumaturgia
+
+# -- Cards -- 
+
+# Focussing
+card.focussing.name=Focos
+card.focussing.text=Você tenta concentrar a aura ao seu redor em um único ponto. Você ganha uma compreensão mais profunda de como lançar vis. Ganha 20 de Taumaturgia.
+# Conductance
+card.conductance.name=Conductividade
+card.conductance.text=Você tenta medir como o vis se comporta quando movido por vários metais, permitindo que você obtenha uma compreensão mais profunda das tampas das varinhas. Ganha 25 de Taumaturgia.
+
+
+
+# -- Stages --
+
+# Unlock Thaumaturgy
+research.UNLOCKTHAUMATURGY.title=Descobrindo a Taumaturgia
+research.UNLOCKTHAUMATURGY.stage.0=Embora criar um Taumômetro usando a Bancada Arcana tenha sido relativamente fácil, parece que a criação de outros dispositivos requer, além de cristais de essência bruta, vis também. No entanto, todos os meus esforços para drená-lo diretamente da aura foram infrutíferos, talvez eu precise de algum tipo de dispositivo de canalização.
+research.UNLOCKTHAUMATURGY.stage.1=Mesmo que eu não possa confiar no uso do vis para criar meu dispositivo de canalização, criei um dispositivo bastante elegante para lançar quantidades menores de vis. Esta varinha bastante rudimentar é capaz de armazenar 50 vis dentro dela, agora só preciso preenchê-la com um pouco de vis.
+
+# Base Thaumaturgy
+research.BASETHAUMATURGY.title=Taumaturgia Básica
+research.BASETHAUMATURGY.stage.0=Agora que tenho minha Varinha posso começar a montar dispositivos arcanos, mas duvido que esta Varinha seja suficiente, talvez eu deva começar a procurar outros Materiais.
+research.BASETHAUMATURGY.addendum.0=Percebi que aqueles focos que fiz não cabem apenas no topo da Manopla dos Conjuradores, mas também diretamente na ponta da minha varinha. Curiosamente, os focos começaram a drenar o vis e não da aura circundante, mas da minha varinha, isso pode ser útil.
+
+# Primal Charm
+research.PRIMALCHARM.title=Cristal Primitivo
+research.PRIMALCHARM.stage.0=Embora eu não tenha conseguido carregar minha varinha com a aura ao meu redor, encontrei pequenos orbes de vis que me permitiam carregá-la, no entanto, deveria ser possível construir um dispositivo que fosse capaz de drenar pelo menos um pouco da aura circundante para carregar minha varinha.
+research.PRIMALCHARM.stage.1=Eu criei um pequeno dispositivo que é basicamente um ressonador vis aumentado, criando um loop de feedback de vis a partir das oscilações dos cristais vis incluídos, transformando a aura em orbes vis concentrado, para serem coletados usando uma varinha.
+
+# Copper Caps
+research.CAP_COPPER.title=Pontas de Cobre
+research.CAP_COPPER.stage.0=Esses Engenheiros usam esse metal para construir suas máquinas bobas e conduzir algo que eles chamam de RF (esses idiotas não têm ideia do que estão falando), espero que ele seja capaz de conduzir vis também.
+research.CAP_COPPER.stage.1=Se os Engenheiros soubessem o que eles têm em mãos lá...<BR> Este metal, embora não seja melhor em canalizar em relação ao ferro, tem uma propriedade ainda mais interessante em relação aos cristais de vis. Parece que o vis emitido deste metal é de alguma forma tingido com §7ORDO§r e §8PERDITIO§r, resultando em uma quantidade diminuída de cristais vis desses tipos.
+
+# Brass Caps
+research.CAP_BRASS.title=Pontas de Latão
+research.CAP_BRASS.stage.0=Este novo metal que criei parece conduzir vis melhor do que o ferro normal, e daí se eu cobrisse minha varinha com um pouco de latão alquímico.
+research.CAP_BRASS.stage.1=Essas pontas de latão que fiz conduzem vis muito melhor do que o ferro comum, resultando em um desconto de 5% em vis
+
+# Silver Caps
+research.CAP_SILVER.title=Pontas de Prata
+research.CAP_SILVER.stage.0=A prata é um metal usado principalmente por Engenheiros, mas também existem algumas pessoas especializadas em bruxaria que a usam para se proteger de lobisomens, então talvez haja mais do que isso.
+research.CAP_SILVER.stage.1=As bruxas estavam certas, a prata é um vis condutor incrível, mas duvido que elas saibam como fazê-la mostrar todo o seu potencial, precisei de uma infusão arcana para fazer a prata funcionar como um vis condutor decente, mas valeu a pena. No que diz respeito ao desconto, não é realmente melhor que o latão, mas tem desconto de cristal em todos os 4 aspectos elementares, o que é ótimo.
+
+# Thaumium Caps
+research.CAP_THAUMIUM.title=Pontas de Táumio
+research.CAP_THAUMIUM.stage.0=Como eu poderia não pensar nisso, o táumio é um metal incrivelmente mágico, então fazer pontas com ele é apenas lógico, mas tenho a sensação de que isso será uma tarefa mais difícil do que todas as outras.
+research.CAP_THAUMIUM.stage.1=Consegui construir lindas pontas de varinha com táumio. O design da base foi o mesmo de sempre, mas eles não funcionaram tão bem quanto eu esperava, mas depois que infundi essas pontas com um pouco de essência e salis mundus, as pontas tiveram uma afinidade muito maior com o vis, tornando-as melhores que o latão. Esses limites dão 10% em todos os artesanatos, o que é bastante decente.
+
+# Void Caps
+research.CAP_VOID.title=Pontas de Metal do Void
+research.CAP_VOID.stage.0=Eu vi coisas. Este metal é forte, é poderoso, resiste a qualquer vis que flua através dele, mas deve haver um caminho, TEM QUE TER...
+research.CAP_VOID.stage.1=Funciona, realmente funciona. Ao infundir essas pontas com tipos escuros de essência, consegui criar pontas que se comportam de maneira diferente de tudo que eu já vi antes, resultando em um desconto de 20%, mas a que custo?
+
+# Greatwood Rod
+research.ROD_GREATWOOD.title=Haste de Madeira de Grande Carvalho
+research.ROD_GREATWOOD.stage.0=Nas minhas viagens me deparei com uma árvore que é um pouco diferente, minha varinha já é feita de madeira, mas essa madeira parece mais mágica, eu provavelmente deveria tentar fazer uma nova varinha com ela.
+research.ROD_GREATWOOD.stage.1=Madeira de Grande Carvalho é realmente ótima! Exigiu um pouco de vis e alguns Cristais de §8Perditio§r, mas consegui transformá-lo em um novo bastão de varinha, que é muito melhor do que madeira simples. Permite armazenar 200 vis, o que permite possibilidades totalmente novas, mas tenho visto algumas outras árvores ultimamente.
+
+# Reed Rod
+research.ROD_REED.title=Haste de Cana
+research.ROD_REED.stage.0=Eu tive uma ideia, e a cana-de-açúcar, ela reage naturalmente ao §e aer§r, então provavelmente tem alguns efeitos na minha varinha. Vai exigir um pouco de esforço, mas tenho grandes esperanças neste.
+research.ROD_REED.stage.1=Isso é interessante, a infusão fez com que a cana segurasse 600 vis, o que é mais do que madeira excelente, curiosamente sinto uma ressonância estranha se a segurar alto o suficiente, me pergunto o que acontece se ficar alto o suficiente.
+
+# Blaze Rod
+research.ROD_BLAZE.title=Haste de Blaze
+research.ROD_BLAZE.stage.0=Eu tive uma ideia, que tal o bastão de fogo, ele reage naturalmente ao §6ignis§r e tem um formato adequado, então provavelmente tem alguns efeitos na minha varinha. Vai exigir um pouco de esforço, mas tenho grandes esperanças neste.
+research.ROD_BLAZE.stage.1=Isso é interessante, a infusão fez com que a haste de chama segurasse 600 vis, o que é mais do que madeira excelente, curiosamente sinto uma ressonância estranha perto da minha fornalha, me pergunto o que acontece se ficar quente o suficiente.
+
+# Ice Rod
+research.ROD_ICE.title=Haste de Gelo
+research.ROD_ICE.stage.0=Eu tive uma ideia, e quanto ao gelo, ele reage naturalmente ao §9aqua§r, então provavelmente tem alguns efeitos na minha varinha. Vai exigir um pouco de esforço, mas tenho grandes esperanças neste.
+research.ROD_ICE.stage.1=Isso é interessante, a infusão fez com que o gelo segurasse 600 vis, o que é mais do que madeira excelente, curiosamente sinto uma ressonância estranha perto da neve, me pergunto o que acontece se esfriar o suficiente.
+
+# Obsidian Rod
+research.ROD_OBSIDIAN.title=Haste de Obsidiana
+research.ROD_OBSIDIAN.stage.0=Eu tive uma ideia, e a obsidiana, ela reage naturalmente ao §2terra§r, então provavelmente tem alguns efeitos na minha varinha. Vai exigir um pouco de esforço, mas tenho grandes esperanças neste.
+research.ROD_OBSIDIAN.stage.1=Isso é interessante, a infusão fez com que a obsidain segurasse 600 vis, o que é mais do que madeira excelente, curiosamente sinto uma ressonância estranha perto do chão, me pergunto o que acontece se ela ficar baixa o suficiente.
+
+# Quartz Rod
+research.ROD_QUARTZ.title=Haste de Quartzo
+research.ROD_QUARTZ.stage.0=Eu tive uma ideia, e quanto ao quartzo, ele reage naturalmente ao §fordo§r, então provavelmente tem alguns efeitos na minha varinha. Vai exigir um pouco de esforço, mas tenho grandes esperanças neste.Eu tive uma ideia, e quanto ao quartzo, ele reage naturalmente ao §fordo§r, então provavelmente tem alguns efeitos na minha varinha. Vai exigir um pouco de esforço, mas tenho grandes esperanças neste.
+research.ROD_QUARTZ.stage.1=Isso é interessante, a infusão fez com que o quartzo contivesse 600 vis, o que é mais do que a madeira nobre.
+
+# Bone Rod
+research.ROD_BONE.title=Haste de Osso
+research.ROD_BONE.stage.0=Eu tive uma ideia, e quanto ao osso, ele reage naturalmente ao §8perditio§r, então provavelmente tem alguns efeitos na minha varinha. Vai exigir um pouco de esforço, como posso achar que isso é uma boa ideia?
+research.ROD_BONE.stage.1=Isso é interessante, a infusão fez com que o osso contivesse 600 vis, o que é mais do que madeira excelente.
+
+#Silverwood Rod
+research.ROD_SILVERWOOD.title=Haste de Madeira Prateada
+research.ROD_SILVERWOOD.stage.0=A madeira desta árvore parece ter um potencial mágico muito maior do que todas as outras plantas que vi até agora, perfeita para um núcleo de varinha de tamanho considerável, minha ambição é alta, e assim será o esforço que colocarei nela.
+research.ROD_SILVERWOOD.stage.1=Eu consegui, embora essa madeira tivesse muito potencial consegui aumentar ainda mais a quantidade de vis armazenável, foi preciso um pouco de essêntia, mas tenho certeza que 800 vis devem ser suficientes por enquanto.
+
+# - Thaumic Additions Compat -
+
+#Mithrillium Caps
+research.CAP_MITHRILLIUM.title=Pontas de Mitrílio
+research.CAP_MITHRILLIUM.stage.0=Eu nunca esperei que houvesse um metal ainda mais potente que o metal vazio, mas isso é realmente desconcertante, talvez meus estudos de taumaturgia tenham terminado em breve, talvez eu deva tentar forjar um novo par de pontas de varinha...
+research.CAP_MITHRILLIUM.stage.1=Precisou de muito salis mundus para fazê-lo funcionar novamente, mas o resultado definitivamente valeu a pena, essas pontas oferecem um desconto de 25% e até um desconto de 1 cristal em todos os aspectos. Mas por que sempre é preciso tanto salis mundus?
+
+#Adaminite Caps
+research.CAP_ADAMINITE.title=Pontas de Madeira Adamantina
+research.CAP_ADAMINITE.stage.0=Quando o Mitrílio já é ótimo, então e o Adamantina deveria ser ainda melhor, é apenas lógico, mas tenho a sensação de que não só o Warp afetará minha sanidade desta vez.
+research.CAP_ADAMINITE.stage.1=Acontece que eu estava certo, esses limites são realmente maravilhosos, eles oferecem um desconto de 30% e até um desconto primário dobrado, talvez eu deva parar agora, ou talvez eu deva ir ainda mais longe.
+
+#Adamintewood Rod
+research.ROD_ADAMINITEWOOD.title=Haste de Madeira Adamantina
+research.ROD_ADAMINITEWOOD.stage.0=Estou com um problema, parece que não posso prosseguir a menos que encontre uma alternativa para esta haste de Madeira Prateada, fui um tolo pensando que 800 vis é suficiente, deveria ter começado antes para criar um armazenamento de vis maior, mas agora parece um bom momento para começar.
+research.ROD_ADAMINITEWOOD.stage.1=Ao infundir uma vara de madeira prateada mundana com muita adamantina, consegui fazer um recipiente forte o suficiente para quadruplicar a capacidade de visibilidade da vara de madeira prateada, sei que poderia ter ido mais longe, mas me sinto desconfortável ao tocar diretamente uma quantidade tão grande de vis com minhas próprias mãos, especialmente quando uma parte tão grande dele conduz a luz como nada mais no universo.
+
+#Mithminite Caps
+research.CAP_MITHMINITE.title=Pontas de Mithminita
+research.CAP_MITHMINITE.stage.0=Tem que ser isso, esse metal, tão cheio de energia primordial, um condutor de vis tão forte que nem consigo medi-lo, não me importa como, mas quero isso para as pontas da minha varinha, nunca desejei algo mais do que esse.
+research.CAP_MITHMINITE.stage.1=Quem era eu para pensar que esse metal poderia simplesmente ser reativado por alguns desses tolos salis mundus, foi preciso um pouco da energia primal mais pura que consegui encontrar, mas valeu a pena, um desconto de 40% no vis, e um desconto de três cristais em todos os aspectos, duvido que consiga ir mais longe, é o fim.
+
+# - Thaumic Bases -
+
+#Thauminite Caps
+research.CAP_THAUMINITE.title=Pontas de Tauminita
+research.CAP_THAUMINITE.stage.0=Este metal parece ser bastante semelhante ao táumio, mas é tão cristalino e ordenado que não deve ser necessário nenhum esforço para transformá-lo em um par de pontas de varinha funcionais.
+research.CAP_THAUMINITE.stage.1=Bom, foi mais fácil do que eu esperava, nem precisou de infusão, só um pouco de salis mundus puro, enquanto forjava as pontas, bom para mim. Um desconto de 15% e um cristal de §7ORDO§r a menos, é um negócio incrível.
+
+# - Planar Artifice -
+
+#Alkimium Caps
+research.CAP_ALKIMIUM.title=Pontas de Alquímio
+research.CAP_ALKIMIUM.stage.0=Desde que descobri este Alquímio troquei muito latão por ele, então talvez seja hora de substituir minhas pontas de latão por ele também.
+research.CAP_ALKIMIUM.stage.1=Eu não estava exatamente esperançoso quando pensei nisso, já que o alquímio é apenas um derivado do latão, mas não esperava que ele ressoasse em tantos aspectos. <br> Embora uma redução de 5% pareça não ser muito, o alquímio oferece um desconto de cristal único para §3AQUA§r, §2TERRA§r e §7ORDO§r, o que é bastante.
+
+#Bismuth Caps
+research.CAP_BISMUTH.title=Pontas de Bismuto
+research.CAP_BISMUTH.stage.0=Bismuto mostra uma enorme reatividade à aura, então transformá-lo em um novo par de Pontas de Varinha provavelmente não é a pior ideia, o que é Taumaturgia, mas uma forma especializada de Auromancia.
+research.CAP_BISMUTH.stage.1=Como eu esperava, o Bismuto é um maravilhoso condutor de vis, concedendo 15% de desconto em todos os trabalhos realizados com ele, embora seja muito colorido não reage a nenhum elemento, mas sim a §7ORDO§r e §8PERDITIO§r, que é provavelmente uma conexão com o vis ordenado e o fluxo entrópico. Eu poderia ter esperado isso.
