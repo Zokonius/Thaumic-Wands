@@ -68,7 +68,7 @@ public class PlanarArtificeCompat implements ICompat {
             .setRecipes(TW_Recipes.recipes.get("CAP_ALKIMIUM.1"))
             .build()
         };
-        parents = new String[] {"CAP_BRASS", "ALKIMIUM"};
+        parents = new String[] {"CAP_BRASS", "PA_ALKIMIUM"};
         ResearchHelper.makeResearch("CAP_ALKIMIUM", "THAUMATURGY", -5, -1, new ItemStack(itemWandCapPA), stages, parents);
         
         // Bismuth Caps
@@ -83,7 +83,7 @@ public class PlanarArtificeCompat implements ICompat {
             .setRecipes(TW_Recipes.recipes.get("CAP_BISMUTH.1"))
             .build()
         };
-        parents = new String[] {"CAP_ALKIMIUM", "~CAP_THAUMIUM", "BISMUTH"};
+        parents = new String[] {"CAP_ALKIMIUM", "~CAP_THAUMIUM", "PA_BISMUTH"};
         ResearchHelper.makeResearch("CAP_BISMUTH", "THAUMATURGY", -6, -4, new ItemStack(itemWandCapPA,1,1), stages, parents);
         
         
